@@ -5,7 +5,7 @@ import UA from '../assets/ua-flag.svg';
 
 const SwitchLanguage = () => {
 	const { i18n } = useTranslation();
-	const savedLanguage = localStorage.getItem('language');
+	const savedLanguage = localStorage.getItem('language') || 'en';
 
 	useEffect(() => {
 		if (savedLanguage) {
