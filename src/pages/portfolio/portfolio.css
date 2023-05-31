@@ -50,6 +50,7 @@
 	display: grid;
 	place-items: center;
 	padding: 15px;
+	cursor: default;
 }
 
 .portfolio__modal-content {
@@ -68,6 +69,7 @@
 	height: 50px;
 	width: 50px;
 	filter: invert(0.8);
+	cursor: pointer;
 }
 
 .modal__title {
@@ -79,7 +81,7 @@
 }
 
 .modal__list {
-	grid-template-columns: 1fr;
+	grid-template-columns: repeat(2,1fr);
 	row-gap: 10px !important;
 	margin-bottom: 24px;
 }
@@ -95,15 +97,18 @@
 }
 
 .item__title,
-.item_details {
+.item__details {
 	color: var(--title-color);
 	font-size: var(--small-font-size);
 }
 
-.item_details {
+.item__details {
 	font-weight: var(--weight-600);
 }
 
+.item__details a {
+	color: var(--first-color);
+}
 
 .modal__img {
 	width: 100%;

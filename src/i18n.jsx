@@ -43,139 +43,6 @@ const resources = {
 			'education.button': 'Завантажити сертифікат',
 			'portfolio.title': 'Мої',
 			'portfolio.title-span': 'Проекти',
-			portfolio: [
-				{
-					title: 'Обробка фото',
-					details: [
-						{
-							title: 'Проект : ',
-							desc: 'Photo',
-						},
-						{
-							title: 'Клієнт : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Технології : ',
-							desc: 'Adobe Photoshop',
-						},
-						{
-							title: 'Перегляд : ',
-							desc: 'www.dribble.com',
-						},
-					],
-				},
-
-				{
-					title: 'Дизайн веб-сайту',
-					details: [
-						{
-							title: 'Проект : ',
-							desc: 'Website',
-						},
-						{
-							title: 'Клієнт : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Технології : ',
-							desc: 'React JS',
-						},
-						{
-							title: 'Перегляд : ',
-							desc: 'www.dribble.com',
-						},
-					],
-				},
-
-				{
-					title: 'Обробка відео',
-					details: [
-						{
-							title: 'Проект : ',
-							desc: 'Video',
-						},
-						{
-							title: 'Клієнт : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Технології : ',
-							desc: 'Adobe Premium',
-						},
-						{
-							title: 'Перегляд : ',
-							desc: 'www.dribble.com',
-						},
-					],
-				},
-
-				{
-					title: 'Обробка відео',
-					details: [
-						{
-							title: 'Проект : ',
-							desc: 'Video',
-						},
-						{
-							title: 'Клієнт : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Технології : ',
-							desc: 'Adobe Premium',
-						},
-						{
-							title: 'Перегляд : ',
-							desc: 'www.dribble.com',
-						},
-					],
-				},
-
-				{
-					title: 'Односторінковий сайт',
-					details: [
-						{
-							title: 'Проект : ',
-							desc: 'Website',
-						},
-						{
-							title: 'Клієнт : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Технології : ',
-							desc: 'React JS, Node JS',
-						},
-						{
-							title: 'Перегляд : ',
-							desc: 'www.dribble.com',
-						},
-					],
-				},
-
-				{
-					title: 'Обробка фото',
-					details: [
-						{
-							title: 'Проект : ',
-							desc: 'Photo',
-						},
-						{
-							title: 'Клієнт : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Технології : ',
-							desc: 'Adobe Photoshop',
-						},
-						{
-							title: 'Перегляд : ',
-							desc: 'www.dibble.com',
-						},
-					],
-				},
-			],
 			'contact.title': 'Встановити',
 			'contact.title-span': 'Зв’язок',
 			'contact.subtitle': 'Очікую вашого повідомлення',
@@ -188,6 +55,16 @@ const resources = {
 			'name.placeholder': 'Ваше ім’я',
 			'email.placeholder': 'Ваша пошта',
 			'textarea.placeholder': 'Ваше повідомлення',
+			'portfolio.item1-title-1': 'Проект : ',
+			'portfolio.item1-desc': 'Односторінковий сайт',
+			'portfolio.item-title-2': 'Технології : ',
+			'portfolio.item-title-3': 'Прев’ю : ',
+			'portfolio.item-title-4': 'Код : ',
+			'portfolio.item2-desc': 'Паралакс ефект',
+			'portfolio.item3-desc': 'Гра',
+			'portfolio.item4-desc': 'Трекер завдань',
+			'portfolio.item5-desc': 'Фейкова доставка їжі',
+			'portfolio.item6-desc': 'Створення кредитних карток',
 		},
 	},
 	en: {
@@ -231,139 +108,6 @@ const resources = {
 			'education.button': 'Download certificate',
 			'portfolio.title': 'My',
 			'portfolio.title-span': 'Portfolio',
-			portfolio: [
-				{
-					title: 'Photo Editing',
-					details: [
-						{
-							title: 'Project : ',
-							desc: 'Photo',
-						},
-						{
-							title: 'Client : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Technology : ',
-							desc: 'Adobe Photoshop',
-						},
-						{
-							title: 'Preview : ',
-							desc: 'www.dribble.com',
-						},
-					],
-				},
-
-				{
-					title: 'Website Design',
-					details: [
-						{
-							title: 'Project : ',
-							desc: 'Website',
-						},
-						{
-							title: 'Client : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Technology : ',
-							desc: 'React JS',
-						},
-						{
-							title: 'Preview : ',
-							desc: 'www.dribble.com',
-						},
-					],
-				},
-
-				{
-					title: 'Video Editing',
-					details: [
-						{
-							title: 'Project : ',
-							desc: 'Video',
-						},
-						{
-							title: 'Client : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Technology : ',
-							desc: 'Adobe Premium',
-						},
-						{
-							title: 'Preview : ',
-							desc: 'www.dribble.com',
-						},
-					],
-				},
-
-				{
-					title: 'Video Editing',
-					details: [
-						{
-							title: 'Project : ',
-							desc: 'Video',
-						},
-						{
-							title: 'Client : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Technology : ',
-							desc: 'Adobe Premium',
-						},
-						{
-							title: 'Preview : ',
-							desc: 'www.dribble.com',
-						},
-					],
-				},
-
-				{
-					title: 'Landing Page',
-					details: [
-						{
-							title: 'Project : ',
-							desc: 'Website',
-						},
-						{
-							title: 'Client : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Technology : ',
-							desc: 'React JS, Node JS',
-						},
-						{
-							title: 'Preview : ',
-							desc: 'www.dribble.com',
-						},
-					],
-				},
-
-				{
-					title: 'Photo Editing',
-					details: [
-						{
-							title: 'Project : ',
-							desc: 'Photo',
-						},
-						{
-							title: 'Client : ',
-							desc: 'Dribble',
-						},
-						{
-							title: 'Technology : ',
-							desc: 'Adobe Photoshop',
-						},
-						{
-							title: 'Preview : ',
-							desc: 'www.dibble.com',
-						},
-					],
-				},
-			],
 			'contact.title': 'Get In',
 			'contact.title-span': 'Touch',
 			'contact.subtitle': 'Waiting your message!',
@@ -377,6 +121,16 @@ const resources = {
 			'name.placeholder': 'Your Name',
 			'email.placeholder': 'Your Email',
 			'textarea.placeholder': 'Your Message',
+			'portfolio.item1-title-1': 'Project : ',
+			'portfolio.item1-desc': 'Langing page',
+			'portfolio.item-title-2': 'Technology : ',
+			'portfolio.item-title-3': 'Preview : ',
+			'portfolio.item-title-4': 'Code : ',
+			'portfolio.item2-desc': 'Parallax effect',
+			'portfolio.item3-desc': 'Game',
+			'portfolio.item4-desc': 'Task tracker',
+			'portfolio.item5-desc': 'Fake food delivery',
+			'portfolio.item6-desc': 'Credit cards creator',
 		},
 	},
 };

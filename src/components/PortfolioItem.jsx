@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import parse from 'html-react-parser';
 import { useState } from 'react';
 import Close from '../assets/close.svg';
 
@@ -20,7 +21,12 @@ const PortfolioItem = ({ img, title, details }) => {
 			{modal && (
 				<div className='portfolio__modal'>
 					<div className='portfolio__modal-content'>
-						<img src={Close} alt='' className='modal__close' onClick={toggleModal} />
+						<img
+							src={Close}
+							alt=''
+							className='modal__close'
+							onClick={toggleModal}
+						/>
 
 						<h3 className='modal__title'>{title}</h3>
 						<ul className='modal__list grid'>
@@ -31,7 +37,7 @@ const PortfolioItem = ({ img, title, details }) => {
 
 										<div>
 											<span className='item__title'>{title}</span>
-											<span className='item__details'>{desc}</span>
+											<span className='item__details'>{parse(desc)}</span>
 										</div>
 									</li>
 								);

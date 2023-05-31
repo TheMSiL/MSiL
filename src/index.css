@@ -258,7 +258,8 @@
 		display: block;
 	}
 
-	.portfolio__container {
+	.portfolio__container,
+	.modal__list {
 		grid-template-columns: 1fr;
 	}
 
