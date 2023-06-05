@@ -77,6 +77,9 @@ textarea {
 body {
 	background-color: var(--body-color);
 	color: var(--text-color);
+	-webkit-tap-highlight-color: transparent;
+	-moz-tap-highlight-color: transparent;
+	-ms-tap-highlight-color: transparent;
 }
 
 h1,
@@ -192,4 +195,3 @@ img {
 	color: var(--text-white);
 	font-size: var(--large-font-size);
 }
-

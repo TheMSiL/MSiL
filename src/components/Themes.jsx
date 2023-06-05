@@ -45,6 +45,13 @@ const Themes = () => {
 	};
 
 	useEffect(() => {
+		const themeColorMetaTag = document.getElementById('theme-color-meta');
+		themeColorMetaTag.setAttribute('content', color);
+		localStorage.setItem('color', color);
+	}, [color]);
+
+
+	useEffect(() => {
 		document.documentElement.style.setProperty('--first-color', color);
 		localStorage.setItem('color', color);
 	}, [color]);
