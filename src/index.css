@@ -304,6 +304,11 @@
 }
 
 @media screen and (max-width: 450px) {
+	.home__data {
+		padding-top: 75px;
+		padding-right: 30px;
+	}
+
 	.home__img {
 		display: none;
 	}
@@ -346,19 +351,37 @@
 	}
 
 	.language {
-		top: -10%;
+		width: 32px;
+		height: 32px;
+		top: -5%;
 	}
 
 	.style__switcher-toggler {
+		width: 32px;
+		height: 32px;
 		top: 35px;
 	}
 
 	.theme__toggler {
-		bottom: 5%;
+		width: 32px;
+		height: 32px;
+		bottom: 18%;
 	}
 }
 
 @media screen and (max-width: 350px) {
+	.home__data {
+		padding-top: 100px;
+	}
+
+	.language {
+		top: 1%;
+	}
+
+	.style__switcher-toggler {
+		top: 42px;
+	}
+
 	.home__title {
 		text-align: center;
 	}
