@@ -372,6 +372,7 @@
 @media screen and (max-width: 350px) {
 	.home__data {
 		padding-top: 100px;
+		padding-right: 15px;
 	}
 
 	.language {
@@ -379,7 +380,7 @@
 	}
 
 	.style__switcher-toggler {
-		top: 42px;
+		top: 38px;
 	}
 
 	.home__title {
