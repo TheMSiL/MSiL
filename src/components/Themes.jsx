@@ -45,11 +45,12 @@ const Themes = () => {
 	};
 
 	useEffect(() => {
-		const themeColorMetaTag = document.getElementById('theme-color-meta');
+		const themeColorMetaTag = document.querySelector(
+			'meta[name="theme-color"]'
+		);
 		themeColorMetaTag.setAttribute('content', color);
 		localStorage.setItem('color', color);
 	}, [color]);
-
 
 	useEffect(() => {
 		document.documentElement.style.setProperty('--first-color', color);
