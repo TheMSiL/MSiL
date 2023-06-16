@@ -6,9 +6,11 @@ import './portfolio.css';
 
 import Work3 from '../../assets/2048.png';
 import Work6 from '../../assets/CreditCards.png';
+import Work7 from '../../assets/NFT.png';
 import Work1 from '../../assets/Qubly.png';
 import Work4 from '../../assets/TaskTrack.png';
 import Work5 from '../../assets/YelpApp.png';
+import Work8 from '../../assets/Zone.png';
 import Work2 from '../../assets/parallax.png';
 
 const Portfolio = () => {
@@ -179,6 +181,60 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a href='https://github.com/TheMSiL/CreditCards'>GitHub</a>",
+				},
+			],
+		},
+		{
+			id: 7,
+			img: Work7,
+			title: 'NFT Ring',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item7-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, SASS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://themsil.github.io/NFT-Ring/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/NFT-Ring'>GitHub</a>",
+				},
+			],
+		},
+		{
+			id: 8,
+			img: Work8,
+			title: 'Zone.',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item8-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, SASS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://themsil.github.io/Zone/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/Zone'>GitHub</a>",
 				},
 			],
 		},
