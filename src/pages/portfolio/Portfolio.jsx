@@ -8,6 +8,7 @@ import Work3 from '../../assets/2048.png';
 import Work6 from '../../assets/CreditCards.png';
 import Work7 from '../../assets/NFT.png';
 import Work1 from '../../assets/Qubly.png';
+import Work9 from '../../assets/RandomColor.png';
 import Work4 from '../../assets/TaskTrack.png';
 import Work5 from '../../assets/YelpApp.png';
 import Work8 from '../../assets/Zone.png';
@@ -235,6 +236,33 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a href='https://github.com/TheMSiL/Zone'>GitHub</a>",
+				},
+			],
+		},
+		{
+			id: 9,
+			img: Work9,
+			title: 'RandomColor',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item9-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, CSS, JavaScript',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://themsil.github.io/RandomColor/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/RandomColor'>GitHub</a>",
 				},
 			],
 		},

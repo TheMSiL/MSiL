@@ -67,6 +67,7 @@ const resources = {
 			'portfolio.item6-desc': 'Створення кредитних карток',
 			'portfolio.item7-desc': 'Односторінковий сайт',
 			'portfolio.item8-desc': 'Односторінковий сайт',
+			'portfolio.item9-desc': 'Генератор кольорів',
 		},
 	},
 	en: {
@@ -135,6 +136,7 @@ const resources = {
 			'portfolio.item6-desc': 'Credit cards creator',
 			'portfolio.item7-desc': 'Langing page',
 			'portfolio.item8-desc': 'Langing page',
+			'portfolio.item9-desc': 'Random colour generator',
 		},
 	},
 };
