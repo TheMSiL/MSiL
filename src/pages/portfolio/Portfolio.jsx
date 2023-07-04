@@ -12,7 +12,7 @@ import Work9 from '../../assets/RandomColor.webp';
 import Work4 from '../../assets/TaskTrack.webp';
 import Work5 from '../../assets/YelpApp.webp';
 import Work8 from '../../assets/Zone.webp';
-import Work2 from '../../assets/parallax.webp';
+import Work2 from '../../assets/Parallax.webp';
 import Work10 from '../../assets/AimTraining.webp';
 
 
