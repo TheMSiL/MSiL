@@ -9,7 +9,7 @@ import ScrollToTop from './ScrollToTop';
 
 import NavBar from './components/Navbar';
 import Themes from './components/Themes';
-import About from './pages/about/about';
+import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Home from './pages/home/Home';
 import Portfolio from './pages/portfolio/Portfolio';
