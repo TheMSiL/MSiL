@@ -4,15 +4,17 @@ import { FiExternalLink, FiFileText } from 'react-icons/fi';
 import PortfolioItem from '../../components/PortfolioItem';
 import './portfolio.css';
 
-import Work3 from '../../assets/2048.png';
-import Work6 from '../../assets/CreditCards.png';
-import Work7 from '../../assets/NFT.png';
-import Work1 from '../../assets/Qubly.png';
-import Work9 from '../../assets/RandomColor.png';
-import Work4 from '../../assets/TaskTrack.png';
-import Work5 from '../../assets/YelpApp.png';
-import Work8 from '../../assets/Zone.png';
-import Work2 from '../../assets/parallax.png';
+import Work3 from '../../assets/2048.webp';
+import Work6 from '../../assets/CreditCards.webp';
+import Work7 from '../../assets/NFT.webp';
+import Work1 from '../../assets/Qubly.webp';
+import Work9 from '../../assets/RandomColor.webp';
+import Work4 from '../../assets/TaskTrack.webp';
+import Work5 from '../../assets/YelpApp.webp';
+import Work8 from '../../assets/Zone.webp';
+import Work2 from '../../assets/parallax.webp';
+import Work10 from '../../assets/AimTraining.webp';
+
 
 const Portfolio = () => {
 	const { t } = useTranslation();
@@ -263,6 +265,33 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a href='https://github.com/TheMSiL/RandomColor'>GitHub</a>",
+				},
+			],
+		},
+		{
+			id: 10,
+			img: Work10,
+			title: 'AimTraining',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item3-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, CSS, JavaScript',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://aim-game-themsil.vercel.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/AimGame'>GitHub</a>",
 				},
 			],
 		},

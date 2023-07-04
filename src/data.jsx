@@ -1,9 +1,4 @@
-import {
-	FaEnvelopeOpen,
-	FaFolderOpen,
-	FaHome,
-	FaUser,
-} from 'react-icons/fa';
+import { FaEnvelopeOpen, FaFolderOpen, FaHome, FaUser } from 'react-icons/fa';
 
 import { FaFacebook, FaLinkedin, FaTelegram, FaViber } from 'react-icons/fa';
 
@@ -18,9 +13,9 @@ import Theme2 from './assets/red.png';
 import Theme10 from './assets/yellow.png';
 import Theme7 from './assets/yellowgreen.png';
 
-import board from './assets/board-game.jpg';
-import music from './assets/guitar.jpg';
-import gaming from './assets/ps.jpg';
+import board from './assets/board-game.webp';
+import music from './assets/guitar.webp';
+import gaming from './assets/ps.webp';
 
 import css from './assets/css.svg';
 import git from './assets/git.svg';
@@ -124,7 +119,6 @@ export const skills = [
 		img: git,
 	},
 ];
-
 
 export const themes = [
 	{
