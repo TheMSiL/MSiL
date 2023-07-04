@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import CV from '../../assets/Silka_Resume.pdf';
-import Profile from '../../assets/profile.webp';
+import Profile from '../../assets/profile.jpeg';
 import AnimatedText from '../../components/AnimatedText';
 import './home.css';
 
