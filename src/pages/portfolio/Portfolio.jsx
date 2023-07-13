@@ -4,15 +4,16 @@ import { FiExternalLink, FiFileText } from 'react-icons/fi';
 import PortfolioItem from '../../components/PortfolioItem';
 import './portfolio.css';
 
+import Work3 from '../../assets/AimTraining.png';
+import Work10 from '../../assets/BeanScene.png';
 import Work6 from '../../assets/CreditCards.png';
 import Work7 from '../../assets/NFT.png';
+import Work2 from '../../assets/Parallax.png';
 import Work1 from '../../assets/Qubly.png';
 import Work9 from '../../assets/RandomColor.png';
 import Work4 from '../../assets/TaskTrack.png';
 import Work5 from '../../assets/YelpApp.png';
 import Work8 from '../../assets/Zone.png';
-import Work2 from '../../assets/Parallax.png';
-import Work3 from '../../assets/AimTraining.png';
 
 const Portfolio = () => {
 	const { t } = useTranslation();
@@ -45,9 +46,90 @@ const Portfolio = () => {
 				},
 			],
 		},
-
 		{
 			id: 2,
+			img: Work8,
+			title: 'Zone.',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item8-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, SASS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://themsil.github.io/Zone/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/Zone'>GitHub</a>",
+				},
+			],
+		},
+		{
+			id: 3,
+			img: Work10,
+			title: 'Bean Scene',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item7-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, SASS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://bean-scene.vercel.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/BeanScene'>GitHub</a>",
+				},
+			],
+		},
+
+		{
+			id: 4,
+			img: Work7,
+			title: 'NFT Ring',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item7-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, SASS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://themsil.github.io/NFT-Ring/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/NFT-Ring'>GitHub</a>",
+				},
+			],
+		},
+		{
+			id: 5,
 			img: Work2,
 			title: 'Fairy Forest',
 			details: [
@@ -74,62 +156,7 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 3,
-			img: Work3,
-			title: 'AimTraining',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item3-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'HTML, CSS, JavaScript',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://aim-game-themsil.vercel.app/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/AimGame'>GitHub</a>",
-				},
-			],
-		},
-		{
-			id: 4,
-			img: Work4,
-			title: 'TaskTrack',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item4-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'JavaScript CSS',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/TaskTrack/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/TaskTrack'>GitHub</a>",
-				},
-			],
-		},
-
-		{
-			id: 5,
+			id: 6,
 			img: Work5,
 			title: 'Yelp App',
 			details: [
@@ -157,7 +184,7 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 6,
+			id: 7,
 			img: Work6,
 			title: 'Credit cards',
 			details: [
@@ -184,61 +211,61 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 7,
-			img: Work7,
-			title: 'NFT Ring',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item7-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'HTML, SASS',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/NFT-Ring/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/NFT-Ring'>GitHub</a>",
-				},
-			],
-		},
-		{
 			id: 8,
-			img: Work8,
-			title: 'Zone.',
+			img: Work3,
+			title: 'AimTraining',
 			details: [
 				{
 					icon: <FiFileText />,
 					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item8-desc'),
+					desc: t('portfolio.item3-desc'),
 				},
 				{
 					icon: <FaGlobe />,
 					title: t('portfolio.item-title-2'),
-					desc: 'React, SASS',
+					desc: 'HTML, CSS, JavaScript',
 				},
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/Zone/'>Web</a>",
+					desc: "<a href='https://aim-game-themsil.vercel.app/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/Zone'>GitHub</a>",
+					desc: "<a href='https://github.com/TheMSiL/AimGame'>GitHub</a>",
 				},
 			],
 		},
 		{
 			id: 9,
+			img: Work4,
+			title: 'TaskTrack',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item4-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'JavaScript CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://themsil.github.io/TaskTrack/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/TaskTrack'>GitHub</a>",
+				},
+			],
+		},
+		{
+			id: 10,
 			img: Work9,
 			title: 'RandomColor',
 			details: [
