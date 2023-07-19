@@ -7,6 +7,7 @@ import './portfolio.css';
 import Work3 from '../../assets/AimTraining.png';
 import Work10 from '../../assets/BeanScene.png';
 import Work6 from '../../assets/CreditCards.png';
+import Work11 from '../../assets/MNTN - Dribbble.png';
 import Work7 from '../../assets/NFT.png';
 import Work2 from '../../assets/Parallax.png';
 import Work1 from '../../assets/Qubly.png';
@@ -32,7 +33,7 @@ const Portfolio = () => {
 				{
 					icon: <FaGlobe />,
 					title: t('portfolio.item-title-2'),
-					desc: 'HTML SASS',
+					desc: 'HTML, SASS',
 				},
 				{
 					icon: <FiExternalLink />,
@@ -100,9 +101,36 @@ const Portfolio = () => {
 				},
 			],
 		},
-
 		{
 			id: 4,
+			img: Work11,
+			title: 'MNTN',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item2-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, SASS, JavaScript',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://msil-mntn.vercel.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/MNTN'>GitHub</a>",
+				},
+			],
+		},
+
+		{
+			id: 5,
 			img: Work7,
 			title: 'NFT Ring',
 			details: [
@@ -129,7 +157,7 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 5,
+			id: 6,
 			img: Work2,
 			title: 'Fairy Forest',
 			details: [
@@ -141,7 +169,7 @@ const Portfolio = () => {
 				{
 					icon: <FaGlobe />,
 					title: t('portfolio.item-title-2'),
-					desc: 'HTML CSS',
+					desc: 'HTML, CSS, GSAP',
 				},
 				{
 					icon: <FiExternalLink />,
@@ -156,7 +184,7 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 6,
+			id: 7,
 			img: Work5,
 			title: 'Yelp App',
 			details: [
@@ -184,7 +212,7 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 7,
+			id: 8,
 			img: Work6,
 			title: 'Credit cards',
 			details: [
@@ -211,7 +239,7 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 8,
+			id: 9,
 			img: Work3,
 			title: 'AimTraining',
 			details: [
@@ -238,7 +266,7 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 9,
+			id: 10,
 			img: Work4,
 			title: 'TaskTrack',
 			details: [
@@ -265,7 +293,7 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 10,
+			id: 11,
 			img: Work9,
 			title: 'RandomColor',
 			details: [
