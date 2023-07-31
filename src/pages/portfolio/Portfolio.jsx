@@ -9,12 +9,12 @@ import Work10 from '../../assets/BeanScene.png';
 import Work6 from '../../assets/CreditCards.png';
 import Work11 from '../../assets/MNTN - Dribbble.png';
 import Work7 from '../../assets/NFT.png';
-import Work2 from '../../assets/Parallax.png';
 import Work1 from '../../assets/Qubly.png';
 import Work9 from '../../assets/RandomColor.png';
 import Work4 from '../../assets/TaskTrack.png';
 import Work5 from '../../assets/YelpApp.png';
 import Work8 from '../../assets/Zone.png';
+import Work2 from '../../assets/elixir.png';
 
 const Portfolio = () => {
 	const { t } = useTranslation();
@@ -22,33 +22,6 @@ const Portfolio = () => {
 	const portfolio = [
 		{
 			id: 1,
-			img: Work1,
-			title: 'Qubly',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item1-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'HTML, SASS',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/Qubly/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/Qubly'>GitHub</a>",
-				},
-			],
-		},
-		{
-			id: 2,
 			img: Work8,
 			title: 'Zone.',
 			details: [
@@ -75,7 +48,88 @@ const Portfolio = () => {
 			],
 		},
 		{
+			id: 2,
+			img: Work2,
+			title: 'Elixir',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item8-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, Bootstrap',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://msil-elixir.vercel.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/Elixir'>GitHub</a>",
+				},
+			],
+		},
+		{
 			id: 3,
+			img: Work11,
+			title: 'MNTN',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item2-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, SASS, JS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://msil-mntn.vercel.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/MNTN'>GitHub</a>",
+				},
+			],
+		},
+		{
+			id: 4,
+			img: Work1,
+			title: 'Qubly',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item1-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, SASS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://themsil.github.io/Qubly/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/Qubly'>GitHub</a>",
+				},
+			],
+		},
+		{
+			id: 5,
 			img: Work10,
 			title: 'Bean Scene',
 			details: [
@@ -101,36 +155,9 @@ const Portfolio = () => {
 				},
 			],
 		},
-		{
-			id: 4,
-			img: Work11,
-			title: 'MNTN',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item2-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'HTML, SASS, JavaScript',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://msil-mntn.vercel.app/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/MNTN'>GitHub</a>",
-				},
-			],
-		},
 
 		{
-			id: 5,
+			id: 6,
 			img: Work7,
 			title: 'NFT Ring',
 			details: [
@@ -142,7 +169,7 @@ const Portfolio = () => {
 				{
 					icon: <FaGlobe />,
 					title: t('portfolio.item-title-2'),
-					desc: 'HTML, SASS',
+					desc: 'HTML, Tailwind CSS',
 				},
 				{
 					icon: <FiExternalLink />,
@@ -153,33 +180,6 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a href='https://github.com/TheMSiL/NFT-Ring'>GitHub</a>",
-				},
-			],
-		},
-		{
-			id: 6,
-			img: Work2,
-			title: 'Fairy Forest',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item2-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'HTML, CSS, GSAP',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/Parrolax-Forest/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/Parrolax-Forest'>GitHub</a>",
 				},
 			],
 		},
@@ -224,7 +224,7 @@ const Portfolio = () => {
 				{
 					icon: <FaGlobe />,
 					title: t('portfolio.item-title-2'),
-					desc: 'React, SASS, Styled-Components',
+					desc: 'React, SASS',
 				},
 				{
 					icon: <FiExternalLink />,
@@ -251,7 +251,7 @@ const Portfolio = () => {
 				{
 					icon: <FaGlobe />,
 					title: t('portfolio.item-title-2'),
-					desc: 'HTML, CSS, JavaScript',
+					desc: 'HTML, CSS, JS',
 				},
 				{
 					icon: <FiExternalLink />,
@@ -278,7 +278,7 @@ const Portfolio = () => {
 				{
 					icon: <FaGlobe />,
 					title: t('portfolio.item-title-2'),
-					desc: 'JavaScript CSS',
+					desc: 'JavaScript',
 				},
 				{
 					icon: <FiExternalLink />,
@@ -305,7 +305,7 @@ const Portfolio = () => {
 				{
 					icon: <FaGlobe />,
 					title: t('portfolio.item-title-2'),
-					desc: 'HTML, CSS, JavaScript',
+					desc: 'HTML, CSS, JS',
 				},
 				{
 					icon: <FiExternalLink />,

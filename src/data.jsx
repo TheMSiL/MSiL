@@ -25,6 +25,10 @@ import react from './assets/react.svg';
 import redux from './assets/redux.svg';
 import sass from './assets/sass.svg';
 import tailwind from './assets/tailwind.svg';
+import bootstrap from './assets/bootstrap.svg'
+import typescript from './assets/typescript.svg'
+import gulp from './assets/gulp.svg'
+import webpack from './assets/webpack.svg'
 
 export const links = [
 	{
@@ -91,32 +95,54 @@ export const skills = [
 
 	{
 		id: 4,
+		title: 'TypeScript',
+		img: typescript,
+	},
+
+	{
+		id: 5,
 		title: 'React',
 		img: react,
 	},
 
 	{
-		id: 5,
+		id: 6,
 		title: 'Redux',
 		img: redux,
 	},
 
 	{
-		id: 6,
+		id: 7,
 		title: 'SASS',
 		img: sass,
 	},
 
 	{
-		id: 7,
+		id: 8,
 		title: 'Tailwind CSS',
 		img: tailwind,
 	},
 
 	{
-		id: 8,
+		id: 9,
+		title: 'Bootstrap',
+		img: bootstrap,
+	},
+
+	{
+		id: 10,
 		title: 'Git',
 		img: git,
+	},
+	{
+		id: 11,
+		title: 'Webpack',
+		img: webpack,
+	},
+	{
+		id: 12,
+		title: 'Gulp',
+		img: gulp,
 	},
 ];
 
