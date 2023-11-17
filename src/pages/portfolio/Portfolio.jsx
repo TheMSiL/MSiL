@@ -15,6 +15,10 @@ import Work4 from '../../assets/TaskTrack.png';
 import Work5 from '../../assets/YelpApp.png';
 import Work8 from '../../assets/Zone.png';
 import Work2 from '../../assets/elixir.png';
+import Work12 from '../../assets/miraton.png';
+import Work12_1 from '../../assets/miraton2.png';
+
+
 
 const Portfolio = () => {
 	const { t } = useTranslation();
@@ -23,6 +27,7 @@ const Portfolio = () => {
 		{
 			id: 1,
 			img: Work8,
+			modalImg: Work8,
 			title: 'Zone.',
 			details: [
 				{
@@ -50,6 +55,7 @@ const Portfolio = () => {
 		{
 			id: 2,
 			img: Work2,
+			modalImg: Work2,
 			title: 'Elixir',
 			details: [
 				{
@@ -77,6 +83,7 @@ const Portfolio = () => {
 		{
 			id: 3,
 			img: Work11,
+			modalImg: Work11,
 			title: 'MNTN',
 			details: [
 				{
@@ -103,7 +110,36 @@ const Portfolio = () => {
 		},
 		{
 			id: 4,
+			img: Work12,
+			modalImg: Work12_1,
+			title: 'Miraton',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item10-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, CSS, JS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a href='https://miraton.vercel.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/Miraton'>GitHub</a>",
+				},
+			],
+		},
+		{
+			id: 5,
 			img: Work1,
+			modalImg: Work1,
 			title: 'Qubly',
 			details: [
 				{
@@ -129,8 +165,9 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 5,
+			id: 6,
 			img: Work10,
+			modalImg: Work10,
 			title: 'Bean Scene',
 			details: [
 				{
@@ -157,8 +194,9 @@ const Portfolio = () => {
 		},
 
 		{
-			id: 6,
+			id: 7,
 			img: Work7,
+			modalImg: Work7,
 			title: 'NFT Ring',
 			details: [
 				{
@@ -184,8 +222,9 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 7,
+			id: 8,
 			img: Work5,
+			modalImg: Work5,
 			title: 'Yelp App',
 			details: [
 				{
@@ -212,8 +251,9 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 8,
+			id: 9,
 			img: Work6,
+			modalImg: Work6,
 			title: 'Credit cards',
 			details: [
 				{
@@ -239,8 +279,9 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 9,
+			id: 10,
 			img: Work3,
+			modalImg: Work3,
 			title: 'AimTraining',
 			details: [
 				{
@@ -266,8 +307,9 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 10,
+			id: 11,
 			img: Work4,
+			modalImg: Work4,
 			title: 'TaskTrack',
 			details: [
 				{
@@ -293,8 +335,9 @@ const Portfolio = () => {
 			],
 		},
 		{
-			id: 11,
+			id: 12,
 			img: Work9,
+			modalImg: Work9,
 			title: 'RandomColor',
 			details: [
 				{

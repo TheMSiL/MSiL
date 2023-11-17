@@ -152,6 +152,7 @@
 		height: 280px;
 		border-radius: 50%;
 		margin-top: auto;
+		object-fit: cover;
 	}
 
 	.home__content {
@@ -301,16 +302,22 @@
 	.contact__container {
 		padding-inline: 50px;
 	}
+
+	.home__img {
+		width: 180px;
+		height: 180px;
+	}
 }
 
 @media screen and (max-width: 450px) {
 	.home__data {
-		padding-top: 75px;
+		padding-top: 0;
 		padding-right: 30px;
 	}
 
 	.home__img {
-		display: none;
+		width: 150px;
+		height: 150px;
 	}
 
 	.nick {
@@ -334,7 +341,7 @@
 	}
 
 	.home__title {
-		font-size: 30px;
+		font-size: 28px;
 	}
 
 	.home__description {
@@ -369,10 +376,13 @@
 	}
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
 	.home__data {
-		padding-top: 100px;
 		padding-right: 15px;
+	}
+
+	.home__title {
+		font-size: 24px;
 	}
 
 	.language {
