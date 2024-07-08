@@ -1,10 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import { FaDownload, FaGraduationCap } from 'react-icons/fa';
 import certificate from '../../assets/Silka certificate.pdf';
-import { useTranslation } from 'react-i18next';
 import CV from '../../assets/Silka_Resume.pdf';
-import Hobbies from '../../components/Hobbies';
+
 import Info from '../../components/Info';
 import Skills from '../../components/Skills';
+import Stats from '../../components/Stats';
 import './about.css';
 
 const About = () => {
@@ -32,12 +33,7 @@ const About = () => {
 						</div>
 						<div className='separator-1200'></div>
 					</div>
-					<div className='hobbies'>
-						<h3 className='section__subtitle'>{t('hobbies.title')}</h3>
-						<ul className='hobbies__list grid'>
-							<Hobbies />
-						</ul>
-					</div>
+					<div className='stats grid'>{<Stats />}</div>
 				</div>
 			</section>
 			<div className='separator'></div>

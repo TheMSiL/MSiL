@@ -17,18 +17,18 @@ import board from './assets/board-game.jpg';
 import music from './assets/guitar.jpg';
 import gaming from './assets/ps.jpg';
 
+import bootstrap from './assets/bootstrap.svg';
 import css from './assets/css.svg';
 import git from './assets/git.svg';
+import gulp from './assets/gulp.svg';
 import html from './assets/html.svg';
 import javascript from './assets/javascript.svg';
 import react from './assets/react.svg';
 import redux from './assets/redux.svg';
 import sass from './assets/sass.svg';
 import tailwind from './assets/tailwind.svg';
-import bootstrap from './assets/bootstrap.svg'
-import typescript from './assets/typescript.svg'
-import gulp from './assets/gulp.svg'
-import webpack from './assets/webpack.svg'
+import typescript from './assets/typescript.svg';
+import webpack from './assets/webpack.svg';
 
 export const links = [
 	{
@@ -226,3 +226,4 @@ export const socials = [
 		children: <FaFacebook />,
 	},
 ];
+
