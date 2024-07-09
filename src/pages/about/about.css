@@ -144,6 +144,10 @@
 	justify-content: space-around;
 }
 
+.education__flex:not(:last-of-type) {
+	margin-bottom: 25px;
+}
+
 .separator-1200 {
 	display: none;
 	border-top: 1px solid var(--border-color);
@@ -178,6 +182,17 @@
 	width: 30px;
 	height: 1px;
 	background: var(--text-color);
+}
+
+.education__flex .button {
+	min-width: 264px;
+}
+
+@media screen and (max-width: 1050px) {
+	.education__flex .button {
+		width: 255px;
+		min-width: auto;
+	}
 }
 
 @media screen and (max-width: 500px) {

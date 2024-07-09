@@ -1,5 +1,10 @@
 import { useTranslation } from 'react-i18next';
-import { FaDownload, FaGraduationCap } from 'react-icons/fa';
+import {
+	FaArrowRight,
+	FaBriefcase,
+	FaDownload,
+	FaGraduationCap,
+} from 'react-icons/fa';
 import certificate from '../../assets/Silka certificate.pdf';
 import CV from '../../assets/Silka_Resume.pdf';
 
@@ -56,6 +61,44 @@ const About = () => {
 					<div className='education__flex'>
 						<div className='resume__data'>
 							<div className='resume__icon'>
+								<FaBriefcase />
+							</div>
+							<span className='resume__date'>2024 - PRESENT</span>
+							<h4 className='resume__subtitle'>
+								{t('education.prof')}
+								<span>Geekle</span>
+							</h4>
+							<p className='resume__description'>{t('geekle.desc')}</p>
+						</div>
+						<a href='https://geekle.us/' className='button'>
+							{t('education.button2')}
+							<span className='button__icon'>
+								<FaArrowRight />
+							</span>
+						</a>
+					</div>
+					<div className='education__flex'>
+						<div className='resume__data'>
+							<div className='resume__icon'>
+								<FaBriefcase />
+							</div>
+							<span className='resume__date'>2023 - PRESENT</span>
+							<h4 className='resume__subtitle'>
+								{t('education.prof')}
+								<span>Freelance.ua</span>
+							</h4>
+							<p className='resume__description'>{t('freelance.desc')}</p>
+						</div>
+						<a href='https://freelance.ua/ru/user/msil/' className='button'>
+							{t('education.button1')}
+							<span className='button__icon'>
+								<FaArrowRight />
+							</span>
+						</a>
+					</div>
+					<div className='education__flex'>
+						<div className='resume__data'>
+							<div className='resume__icon'>
 								<FaGraduationCap />
 							</div>
 							<span className='resume__date'>2023</span>
@@ -73,6 +116,8 @@ const About = () => {
 						</a>
 					</div>
 				</section>
+
+				{/* <div className='separator'></div> */}
 			</section>
 		</main>
 	);

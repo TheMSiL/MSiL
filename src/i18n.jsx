@@ -36,11 +36,13 @@ const resources = {
 			'personal.button': 'Завантажити резюме',
 			'hobbies.title': 'Захоплення',
 			'skills.title': 'Мої Навички',
-			'education.title': 'Освіта',
+			'education.title': 'Досвід та Освіта',
 			'education.prof': 'Фронтенд розробник',
 			'education.desc':
 				'Вивчав HTML, CSS, JavaScript та React. Майстерно оволодів Webpack, Git, Figma та Visual Studio Code.',
 			'education.button': 'Завантажити сертифікат',
+			'education.button1': 'Фріланс профіль',
+			'education.button2': 'Сайт компанії',
 			'portfolio.title': 'Мої',
 			'portfolio.title-span': 'Проекти',
 			'contact.title': 'Встановити',
@@ -77,6 +79,10 @@ const resources = {
 			'stat.item_6': 'Завершених Проектів',
 			'stat.item_7': 'Задоволених Клієнтів',
 			'stat.item_8': 'Технологій Освоєно',
+			'freelance.desc':
+				'Я розробляв лендінги, веб-сайти електронної комерції, маркетплейси, онлайн-казино та багато інших проектів.',
+			'geekle.desc':
+				'Я працюю на півставки, розробляю лендінги та функціонал для Geekle подій',
 		},
 	},
 	en: {
@@ -113,11 +119,13 @@ const resources = {
 			'personal.button': 'Download CV',
 			'hobbies.title': 'Hobbies',
 			'skills.title': 'My Skills',
-			'education.title': 'Education',
+			'education.title': 'Experience & Education',
 			'education.prof': 'Front-end developer',
 			'education.desc':
 				'Learned HTML, CSS, JavaScript and React. Mastered tools such as Webpack, Git, Figma and Visual Studio Code.',
 			'education.button': 'Download certificate',
+			'education.button1': 'Freelance profile',
+			'education.button2': 'Company website',
 			'portfolio.title': 'My',
 			'portfolio.title-span': 'Portfolio',
 			'contact.title': 'Get In',
@@ -155,6 +163,10 @@ const resources = {
 			'stat.item_6': 'Completed of Projects',
 			'stat.item_7': 'Happy of Customers',
 			'stat.item_8': 'Technologies Mastered',
+			'freelance.desc':
+				'I have developed landing pages, e-commerce websites, marketplaces, online casino, and many other projects.',
+			'geekle.desc':
+				'I work part-time, developing landing pages and functionality for Geekle events',
 		},
 	},
 };
