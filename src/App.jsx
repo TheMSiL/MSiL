@@ -12,6 +12,7 @@ import Themes from './components/Themes';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Home from './pages/home/Home';
+import Reviews from './pages/reviews/Reviews'
 import Portfolio from './pages/portfolio/Portfolio';
 
 import './App.css';
@@ -28,6 +29,7 @@ const App = () => {
 			<Routes onUpdate={handleRouteChange}>
 				<Route path='/' element={<Home />} />
 				<Route path='/about' element={<About />} />
+				<Route path='/reviews' element={<Reviews />} />
 				<Route path='/portfolio' element={<Portfolio />} />
 				<Route path='/contact' element={<Contact />} />
 				<Route path='*' element={<Navigate to='/' replace />} />

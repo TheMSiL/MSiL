@@ -83,6 +83,71 @@ const resources = {
 				'Я розробляв лендінги, веб-сайти електронної комерції, маркетплейси, онлайн-казино та багато інших проектів.',
 			'geekle.desc':
 				'Я працюю на півставки, розробляю лендінги та функціонал для Geekle подій',
+			'reviews.title': 'Відгуки',
+			'reviews.title-span': 'клієнтів',
+			'review.name-1': 'Сергей Сиволап',
+			'review.text-1':
+				'Проявил высокий уровень профессионализма и понимания моих потребностей. Он внимательно выслушал мои требования и предложил целый ряд улучшений, которые могли бы улучшить пользовательский опыт и функциональность сайта. Было заметно, что он обладает глубокими знаниями и опытом в области веб-разработки.',
+			'review.name-2': 'Нікифор Бобровніков',
+			'review.text-2':
+				'Максим - проффесионал с которым приятно вести диалог. Походу работы у нас возникла пара технических проблем, которые, благодоря его находчивости, мы смогли решить в короткий срок. Благодорен.Будем прододлжать сотрудничество )',
+			'review.name-3': 'Дмитро Головня',
+			'review.text-3': 'Сделано все быстро и качественно!',
+			'review.name-4': 'Сергій',
+			'review.text-4':
+				'Дуже задоволений, а саме: 1) Професіонал! 2) Конструктивна, комфортна та оперативна комунікація. 3) Людина сфокусована на гарному результаті, а не тільки на оплаті. Вважаю що мені пощастило знайти цього підрядника!',
+			'review.name-5': 'Odd',
+			'review.text-5':
+				'Дуже задоволений співпрацею, швидко та якісно! Домовились на майбутню співпрацю. Рекомендую!',
+			'review.name-6': 'Володимир',
+			'review.text-6':
+				'Дуже гарно дякуємо за чудову роботу! Сподобався підхід, якість та швидкість виконання! Безумовно рекомендуємо!)',
+			'review.name-7': 'Oleg',
+			'review.text-7':
+				'Швидко відповів і почав працювати. Завдання складне та його вирішення викликає питання, але загалом співпрацею задоволений.',
+			'review.name-8': 'Игорь',
+			'review.text-8':
+				'Все чудово, швидко та якісно. Виконавець чує та розуміє замовника, завжди консультує та радить в вирішенні різних питань',
+			'review.name-9': 'Іваницький Ярослав',
+			'review.text-9':
+				'Хочу поділитися своїми враженнями про внесення оновлень до дизайну та функціоналу нашого сайту. Нові зміни дійсно вразили мене своєю якістю та користувальницькою дружністю. Максим підійшов до роботи скрупульозно та швидко реагував на мої правки. В цілому я дуже задоволений і рекомендую до співпраці.',
+			'review.name-10': 'Artur',
+			'review.text-10':
+				'Робота виконана вчасно та якісно. Навіть було додано трішки більше ніж домовлялись на початку. Дякую.',
+			'review.name-11': 'Ренат',
+			'review.text-11':
+				'Дуже задоволений співпрацею! Комунікація - 5/5; Відповідальність - 5/5; Терміни - 4/5',
+			'review.name-12': 'Игорь',
+			'review.text-12':
+				'Быстро объяснил в чем была проблема и исправил, я очень доволен результатом! Рекомендую!',
+			'review.name-13': 'Vitalik Serov',
+			'review.text-13':
+				'Хотел бы выразить свою благодарность и восхищение профессионализмом верстальщика, который выполнил заказ для нашего проекта. Его работа была выполнена не только в удивительно короткие сроки, но и с выдающейся точностью и эстетическим великолепием. Кроме того, верстальщик был всегда готов к обсуждению и внесению необходимых изменений, что сделало взаимодействие с ним приятным и продуктивным.',
+			'review.name-14': 'Сергій',
+			'review.text-14': 'Все добре!',
+			'review.name-15': 'Николай',
+			'review.text-15': 'Робота виконано якісно та вчасно',
+			'review.name-16': 'Никита',
+			'review.text-16':
+				'Замовлення виконано чітко і оперативно, виконавець зробив всі необхідні правки. Результатом задоволений!',
+			'review.name-17': 'AppBoosty LLC',
+			'review.text-17':
+				'Замовлення виконано. Були своєчасвно внесені всі правки, також виконавець самостійно пропонував покращення.',
+			'review.name-18': 'Serhii',
+			'review.text-18':
+				'Все супер! Надійний розробник. Все виконано чітко з ТЗ, та навіть більше. Рекомендую',
+			'review.name-19': 'Yurij',
+			'review.text-19': 'Советую.Всё сделал идеально',
+			'review.name-20': 'Geekle.us',
+			'review.text-20':
+				'Задоволені роботою, швидка, проста та якісна співпраця, рекомендую',
+			'review.name-21': 'Дмитро Купрієнко',
+			'review.text-21':
+				'Все виконано гарно. Прогер був завжди на звʼязку та допомагав. Єдине що, це просадка по термінах, а так все гууд.',
+			'review.name-22': 'Andreii K.',
+			'review.text-22': 'молодец так держать, рекомендую',
+			'review.name-23': 'Вадим Поліщук',
+			'review.text-23': 'Все супер, швидко та якісно',
 		},
 	},
 	en: {
@@ -167,6 +232,71 @@ const resources = {
 				'I have developed landing pages, e-commerce websites, marketplaces, online casino, and many other projects.',
 			'geekle.desc':
 				'I work part-time, developing landing pages and functionality for Geekle events',
+			'reviews.title': 'What clients',
+			'reviews.title-span': 'say',
+			'review.name-1': 'Sergey Sivolap',
+			'review.text-1':
+				'Showed a high level of professionalism and understanding of my needs. He carefully listened to my requirements and suggested a number of improvements that could enhance the user experience and functionality of the site. It was evident that he has deep knowledge and experience in web development.',
+			'review.name-2': 'Nikifor Bobrovnikov',
+			'review.text-2':
+				'Maksym is a professional who is pleasant to talk to. During the work, we encountered a couple of technical problems, which, thanks to his resourcefulness, we were able to solve quickly. Grateful. We will continue to cooperate :)',
+			'review.name-3': 'Dmytro Holovnia',
+			'review.text-3': 'Everything was done quickly and efficiently!',
+			'review.name-4': 'Serhii',
+			'review.text-4':
+				'Very satisfied, namely: 1) Professional! 2) Constructive, comfortable, and prompt communication. 3) The person is focused on a good result, not just the payment. I consider myself lucky to have found this contractor!',
+			'review.name-5': 'Odd',
+			'review.text-5':
+				'Very satisfied with the cooperation, quickly and efficiently! Agreed on future cooperation. I recommend!',
+			'review.name-6': 'Volodymyr',
+			'review.text-6':
+				'Thank you very much for the excellent work! I liked the approach, quality, and speed of execution! Definitely recommend!)',
+			'review.name-7': 'Oleg',
+			'review.text-7':
+				'Responded quickly and started working. The task is complex and its solution raises questions, but overall I am satisfied with the cooperation.',
+			'review.name-8': 'Igor',
+			'review.text-8':
+				'Everything is great, quickly and efficiently. The contractor hears and understands the client, always consults and advises on various issues.',
+			'review.name-9': 'Ivanitskyi Yaroslav',
+			'review.text-9':
+				'I want to share my impressions of the updates to the design and functionality of our site. The new changes really impressed me with their quality and user-friendliness. Maksym approached the work meticulously and responded quickly to my adjustments. Overall, I am very satisfied and recommend working with him.',
+			'review.name-10': 'Artur',
+			'review.text-10':
+				'The work was done on time and with quality. Even a little more was added than we agreed upon at the beginning. Thank you.',
+			'review.name-11': 'Renat',
+			'review.text-11':
+				'Very satisfied with the cooperation! Communication - 5/5; Responsibility - 5/5; Deadlines - 4/5',
+			'review.name-12': 'Igor',
+			'review.text-12':
+				'Quickly explained what the problem was and fixed it, I am very satisfied with the result! Recommend!',
+			'review.name-13': 'Vitalik Serov',
+			'review.text-13':
+				'I would like to express my gratitude and admiration for the professionalism of the developer who completed the order for our project. His work was not only completed in an amazingly short time but also with outstanding accuracy and aesthetic excellence. In addition, the developer was always ready for discussion and making necessary changes, making interaction with him pleasant and productive.',
+			'review.name-14': 'Serhii',
+			'review.text-14': 'Everything is good!',
+			'review.name-15': 'Mykola',
+			'review.text-15': 'The work was done efficiently and on time.',
+			'review.name-16': 'Nikita',
+			'review.text-16':
+				'The order was completed precisely and promptly, the contractor made all the necessary adjustments. I am satisfied with the result!',
+			'review.name-17': 'AppBoosty LLC',
+			'review.text-17':
+				'The order was completed. All corrections were made on time, and the contractor also independently suggested improvements.',
+			'review.name-18': 'Serhii',
+			'review.text-18':
+				'Everything is super! Reliable developer. Everything was done according to the requirements, and even more. Recommend',
+			'review.name-19': 'Yurii',
+			'review.text-19': 'Recommend. Everything was done perfectly.',
+			'review.name-20': 'Geekle.us',
+			'review.text-20':
+				'Satisfied with the work, quick, simple, and high-quality cooperation, recommend',
+			'review.name-21': 'Dmytro Kupriienko',
+			'review.text-21':
+				'Everything was done well. The programmer was always in touch and helped. The only downside was the delay in deadlines, but overall everything is good.',
+			'review.name-22': 'Andrii K.',
+			'review.text-22': 'Well done, keep it up, recommend',
+			'review.name-23': 'Vadym Polishchuk',
+			'review.text-23': 'Everything is great, quickly and efficiently',
 		},
 	},
 };

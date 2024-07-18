@@ -1,4 +1,12 @@
-import { FaEnvelopeOpen, FaFolderOpen, FaHome, FaUser } from 'react-icons/fa';
+import {
+	FaComment,
+	FaCommentDots,
+	FaComments,
+	FaEnvelopeOpen,
+	FaFolderOpen,
+	FaHome,
+	FaUser,
+} from 'react-icons/fa';
 
 import { FaFacebook, FaLinkedin, FaTelegram, FaViber } from 'react-icons/fa';
 
@@ -47,13 +55,20 @@ export const links = [
 
 	{
 		id: 3,
+		name: 'Reviews',
+		icon: <FaCommentDots className='nav__icon' />,
+		path: '/reviews',
+	},
+
+	{
+		id: 4,
 		name: 'Portfolio',
 		icon: <FaFolderOpen className='nav__icon' />,
 		path: '/portfolio',
 	},
 
 	{
-		id: 4,
+		id: 5,
 		name: 'Contact',
 		icon: <FaEnvelopeOpen className='nav__icon' />,
 		path: '/contact',
@@ -226,4 +241,3 @@ export const socials = [
 		children: <FaFacebook />,
 	},
 ];
-

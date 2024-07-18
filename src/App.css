@@ -195,3 +195,10 @@ img {
 	color: var(--text-white);
 	font-size: var(--large-font-size);
 }
+
+
+@media screen and (max-width: 480px) {
+	.section__title {
+		font-size: 32px;
+	}
+}
