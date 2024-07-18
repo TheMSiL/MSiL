@@ -56,6 +56,10 @@
 	background: var(--first-color) !important;
 }
 
+.span_mob {
+	display: none;
+}
+
 @media screen and (max-width: 1024px) {
 	.container {
 		max-width: 95% !important;
@@ -74,7 +78,7 @@
 
 	.review_item {
 		gap: 25px;
-		padding: 0;
+		padding: 0 0 45px 0;
 		font-size: 15px;
 	}
 
@@ -91,16 +95,32 @@
 @media screen and (max-width: 480px) {
 	.review_item {
 		flex-direction: column;
+		gap: 0;
+	}
+
+	.review_left {
+		margin-bottom: 25px;
 	}
 
 	.review_right span {
-		top: 35%;
+		display: none;
 	}
-	.review_left, .review_right {
+
+	.span_mob {
+		display: block;
+		font-size: 96px;
+		line-height: 20px;
+		margin-top: 15px;
+		color: var(--first-color);
+	}
+
+	.review_left,
+	.review_right {
 		width: 100%;
 	}
 
 	.review_right {
+		padding: 0;
 		font-size: 12.5px;
 	}
 	.review_left::after {
