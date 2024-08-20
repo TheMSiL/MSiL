@@ -15,8 +15,12 @@ import Work4 from '../../assets/TaskTrack.png';
 import Work5 from '../../assets/YelpApp.png';
 import Work8 from '../../assets/Zone.png';
 import Work2 from '../../assets/elixir.png';
+import Work13 from '../../assets/kreativekorner.png';
 import Work12 from '../../assets/miraton.png';
 import Work12_1 from '../../assets/miraton2.png';
+import Work14 from '../../assets/wavschool.png';
+import Work15 from '../../assets/curiosity.png';
+import Work16 from '../../assets/tvs.png';
 
 
 
@@ -25,7 +29,6 @@ const Portfolio = () => {
 
 	const portfolio = [
 		{
-			id: 1,
 			img: Work8,
 			modalImg: Work8,
 			title: 'Zone.',
@@ -43,17 +46,16 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/Zone/'>Web</a>",
+					desc: "<a target='_blank' href='https://themsil.github.io/Zone/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/Zone'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/Zone'>GitHub</a>",
 				},
 			],
 		},
 		{
-			id: 2,
 			img: Work2,
 			modalImg: Work2,
 			title: 'Elixir',
@@ -71,17 +73,16 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://msil-elixir.vercel.app/'>Web</a>",
+					desc: "<a target='_blank' href='https://msil-elixir.vercel.app/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/Elixir'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/Elixir'>GitHub</a>",
 				},
 			],
 		},
 		{
-			id: 3,
 			img: Work11,
 			modalImg: Work11,
 			title: 'MNTN',
@@ -99,17 +100,16 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://msil-mntn.vercel.app/'>Web</a>",
+					desc: "<a target='_blank' href='https://msil-mntn.vercel.app/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/MNTN'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/MNTN'>GitHub</a>",
 				},
 			],
 		},
 		{
-			id: 4,
 			img: Work12,
 			modalImg: Work12_1,
 			title: 'Miraton',
@@ -127,17 +127,43 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://miraton.vercel.app/'>Web</a>",
+					desc: "<a target='_blank' href='https://miraton.vercel.app/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/Miraton'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/Miraton'>GitHub</a>",
 				},
 			],
 		},
 		{
-			id: 5,
+			img: Work15,
+			modalImg: Work15,
+			title: 'Curiosity',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item13-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://curiosity-adult.netlify.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/Curiosity-adult'>GitHub</a>",
+				},
+			],
+		},
+		{
 			img: Work1,
 			modalImg: Work1,
 			title: 'Qubly',
@@ -155,17 +181,43 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/Qubly/'>Web</a>",
+					desc: "<a target='_blank' href='https://themsil.github.io/Qubly/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/Qubly'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/Qubly'>GitHub</a>",
 				},
 			],
 		},
 		{
-			id: 6,
+			img: Work13,
+			modalImg: Work13,
+			title: 'Kreative Korner',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item13-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, CSS, JS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://kreativekorner.netlify.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/KreativeKorner'>GitHub</a>",
+				},
+			],
+		},
+		{
 			img: Work10,
 			modalImg: Work10,
 			title: 'Bean Scene',
@@ -183,18 +235,17 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://bean-scene.vercel.app/'>Web</a>",
+					desc: "<a target='_blank' href='https://bean-scene.vercel.app/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/BeanScene'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/BeanScene'>GitHub</a>",
 				},
 			],
 		},
 
 		{
-			id: 7,
 			img: Work7,
 			modalImg: Work7,
 			title: 'NFT Ring',
@@ -212,17 +263,70 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/NFT-Ring/'>Web</a>",
+					desc: "<a target='_blank' href='https://themsil.github.io/NFT-Ring/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/NFT-Ring'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/NFT-Ring'>GitHub</a>",
 				},
 			],
 		},
 		{
-			id: 8,
+			img: Work14,
+			modalImg: Work14,
+			title: 'WaV School',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item14-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/wavschool'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://wavschool.vercel.app/'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work16,
+			modalImg: Work16,
+			title: 'TVS',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item13-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://www.tvs2017.es'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a style='cursor: not-allowed' target='_blank'>NDA</a>",
+				},
+			],
+		},
+		{
 			img: Work5,
 			modalImg: Work5,
 			title: 'Yelp App',
@@ -241,17 +345,16 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/YelpApp/'>Web</a>",
+					desc: "<a target='_blank' href='https://themsil.github.io/YelpApp/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/YelpApp'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/YelpApp'>GitHub</a>",
 				},
 			],
 		},
 		{
-			id: 9,
 			img: Work6,
 			modalImg: Work6,
 			title: 'Credit cards',
@@ -269,17 +372,16 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/CreditCards/'>Web</a>",
+					desc: "<a target='_blank' href='https://themsil.github.io/CreditCards/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/CreditCards'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/CreditCards'>GitHub</a>",
 				},
 			],
 		},
 		{
-			id: 10,
 			img: Work3,
 			modalImg: Work3,
 			title: 'AimTraining',
@@ -297,17 +399,16 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://aim-game-themsil.vercel.app/'>Web</a>",
+					desc: "<a target='_blank' href='https://aim-game-themsil.vercel.app/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/AimGame'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/AimGame'>GitHub</a>",
 				},
 			],
 		},
 		{
-			id: 11,
 			img: Work4,
 			modalImg: Work4,
 			title: 'TaskTrack',
@@ -325,17 +426,16 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/TaskTrack/'>Web</a>",
+					desc: "<a target='_blank' href='https://themsil.github.io/TaskTrack/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/TaskTrack'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/TaskTrack'>GitHub</a>",
 				},
 			],
 		},
 		{
-			id: 12,
 			img: Work9,
 			modalImg: Work9,
 			title: 'RandomColor',
@@ -353,12 +453,12 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a href='https://themsil.github.io/RandomColor/'>Web</a>",
+					desc: "<a target='_blank' href='https://themsil.github.io/RandomColor/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a href='https://github.com/TheMSiL/RandomColor'>GitHub</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/RandomColor'>GitHub</a>",
 				},
 			],
 		},
@@ -370,7 +470,7 @@ const Portfolio = () => {
 			</h2>
 			<div className='portfolio__container container grid'>
 				{portfolio.map(item => {
-					return <PortfolioItem key={item.id} {...item} />;
+					return <PortfolioItem key={item.title} {...item} />;
 				})}
 			</div>
 		</section>
