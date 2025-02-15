@@ -24,6 +24,8 @@ import Work16 from '../../assets/tvs.png';
 import Work17 from '../../assets/kantor.png';
 import Work18 from '../../assets/lucky_jet.png';
 import Work19 from '../../assets/startspeak.png';
+import Work20 from '../../assets/cars_usa.png';
+
 
 const Portfolio = () => {
 	const { t } = useTranslation();
@@ -47,7 +49,7 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a target='_blank' href='https://fortunaplay.top/'>Web</a>",
+					desc: "<a target='_blank' href='https://a414602e421935fd057be3c06a3d080c.info/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
@@ -351,6 +353,33 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a target='_blank' href='https://github.com/TheMSiL/wavschool'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work20,
+			modalImg: Work20,
+			title: 'Delivery Import',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item20-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, CSS, JS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://carfs-from-usa-calculator.netlify.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/cars_from-USA'>GitHub</a>",
 				},
 			],
 		},
