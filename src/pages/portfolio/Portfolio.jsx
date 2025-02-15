@@ -21,12 +21,9 @@ import Work12_1 from '../../assets/miraton2.png';
 import Work14 from '../../assets/wavschool.png';
 import Work15 from '../../assets/curiosity.png';
 import Work16 from '../../assets/tvs.png';
-import Work17 from '../../assets/kantor.png'
+import Work17 from '../../assets/kantor.png';
 import Work18 from '../../assets/lucky_jet.png';
 import Work19 from '../../assets/startspeak.png';
-
-
-
 
 const Portfolio = () => {
 	const { t } = useTranslation();
