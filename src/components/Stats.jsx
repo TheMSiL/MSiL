@@ -8,7 +8,7 @@ const Stats = () => {
 	const stats_desc = [
 		{
 			id: 1,
-			no: '2+',
+			no: '3+',
 			title: t('stat.item_1'),
 		},
 		{
@@ -18,12 +18,12 @@ const Stats = () => {
 		},
 		{
 			id: 3,
-			no: '30+',
+			no: '40+',
 			title: t('stat.item_3'),
 		},
 		{
 			id: 4,
-			no: '10+',
+			no: '12+',
 			title: t('stat.item_4'),
 		},
 	];
@@ -31,7 +31,7 @@ const Stats = () => {
 	const stats_mob = [
 		{
 			id: 1,
-			no: '2+',
+			no: '3+',
 			title: t('stat.item_5'),
 		},
 		{
@@ -41,12 +41,12 @@ const Stats = () => {
 		},
 		{
 			id: 3,
-			no: '30+',
+			no: '40+',
 			title: t('stat.item_7'),
 		},
 		{
 			id: 4,
-			no: '10+',
+			no: '12+',
 			title: t('stat.item_8'),
 		},
 	];

@@ -63,7 +63,26 @@ const About = () => {
 							<div className='resume__icon'>
 								<FaBriefcase />
 							</div>
-							<span className='resume__date'>2024 - PRESENT</span>
+							<span className='resume__date'>2025 - PRESENT</span>
+							<h4 className='resume__subtitle'>
+								{t('education.prof')}
+								<span>FundShop</span>
+							</h4>
+							<p className='resume__description'>{t('fundshop.desc')}</p>
+						</div>
+						<a href='https://www.gofundshop.com/' className='button'>
+							{t('education.button2')}
+							<span className='button__icon'>
+								<FaArrowRight />
+							</span>
+						</a>
+					</div>
+					<div className='education__flex'>
+						<div className='resume__data'>
+							<div className='resume__icon'>
+								<FaBriefcase />
+							</div>
+							<span className='resume__date'>2024 - 2025</span>
 							<h4 className='resume__subtitle'>
 								{t('education.prof')}
 								<span>Geekle</span>
@@ -116,7 +135,6 @@ const About = () => {
 						</a>
 					</div>
 				</section>
-
 			</section>
 		</main>
 	);

@@ -18,7 +18,7 @@ const resources = {
 			'personal.info-title__2': 'Прізвище : ',
 			'personal.info-description__2': 'Сілка',
 			'personal.info-title__3': 'Вік : ',
-			'personal.info-description__3': '25 років',
+			'personal.info-description__3': '27 років',
 			'personal.info-title__4': 'Національність : ',
 			'personal.info-description__4': 'Українець',
 			'personal.info-title__5': 'Пошта : ',
@@ -28,7 +28,7 @@ const resources = {
 			'personal.info-title__7': 'Телефон : ',
 			'personal.info-description__7': '+380981093352',
 			'personal.info-title__8': 'Telegram : ',
-			'personal.info-description__8': 'TheMSiL',
+			'personal.info-description__8': '@TheMSiL',
 			'personal.info-title__9': 'Професія: ',
 			'personal.info-description__9': 'Фронтенд Розробник',
 			'personal.info-title__10': 'Мови : ',
@@ -85,6 +85,8 @@ const resources = {
 			'stat.item_8': 'Технологій Освоєно',
 			'freelance.desc':
 				'Я розробляв лендінги, веб-сайти електронної комерції, маркетплейси, онлайн-казино та багато інших проектів.',
+			'fundshop.desc':
+				'Я працюю на новими веб-сайтами компанії, підтримую вже існуючі, а також розробляю адмін-панель та CRM-систему',
 			'geekle.desc':
 				'Я працюю на півставки, розробляю лендінги та функціонал для Geekle подій',
 			'reviews.title': 'Відгуки',
@@ -170,7 +172,7 @@ const resources = {
 			'personal.info-title__2': 'Last Name : ',
 			'personal.info-description__2': 'Silka',
 			'personal.info-title__3': 'Age : ',
-			'personal.info-description__3': '25 Years',
+			'personal.info-description__3': '27 Years',
 			'personal.info-title__4': 'Nationality : ',
 			'personal.info-description__4': 'Ukrainian',
 			'personal.info-title__5': 'Email : ',
@@ -180,7 +182,7 @@ const resources = {
 			'personal.info-title__7': 'Phone : ',
 			'personal.info-description__7': '+380981093352',
 			'personal.info-title__8': 'Telegram : ',
-			'personal.info-description__8': 'TheMSiL',
+			'personal.info-description__8': '@TheMSiL',
 			'personal.info-title__9': 'Profession : ',
 			'personal.info-description__9': 'Front-end Developer',
 			'personal.info-title__10': 'Languages : ',
@@ -238,6 +240,8 @@ const resources = {
 			'stat.item_8': 'Technologies Mastered',
 			'freelance.desc':
 				'I have developed landing pages, e-commerce websites, marketplaces, online casino, and many other projects.',
+			'fundshop.desc':
+				' work on new company websites, support existing ones, and develop the admin panel and CRM System',
 			'geekle.desc':
 				'I work part-time, developing landing pages and functionality for Geekle events',
 			'reviews.title': 'What clients',
