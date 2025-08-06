@@ -30,13 +30,43 @@ import Work24 from '../../assets/paynicle.png';
 import Work26 from '../../assets/remont.png';
 import Work27 from '../../assets/spayke.png';
 import Work19 from '../../assets/startspeak.png';
+import Work29 from '../../assets/swissPC.png';
+import Work28 from '../../assets/swissnodes.png';
 import Work16 from '../../assets/tvs.png';
+import Work30 from '../../assets/upcup.png';
 import Work14 from '../../assets/wavschool.png';
 
 const Portfolio = () => {
 	const { t } = useTranslation();
 
 	const portfolio = [
+		{
+			img: Work29,
+			modalImg: Work29,
+			title: 'SwissPC',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item13-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Typescript',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://swisspc-services.pingueu.com/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/swiss' target='_blank'>GitHub</a>",
+				},
+			],
+		},
 		{
 			img: Work19,
 			modalImg: Work19,
@@ -115,6 +145,33 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a target='_blank' href='https://github.com/TheMSiL/online_game'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work30,
+			modalImg: Work30,
+			title: 'UpCup',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item13-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Typescript',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://upcup.netlify.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a href='https://github.com/TheMSiL/upcup' target='_blank'>GitHub</a>",
 				},
 			],
 		},
@@ -709,6 +766,33 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a target='_blank' href='https://github.com/TheMSiL/tg_casino'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work28,
+			modalImg: Work28,
+			title: 'SwissNodes',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item20-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, CSS, JS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://swissnodes.org/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a style='cursor: not-allowed' target='_blank'>NDA</a>",
 				},
 			],
 		},

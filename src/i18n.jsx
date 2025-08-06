@@ -153,6 +153,11 @@ const resources = {
 			'review.text-22': 'молодец так держать, рекомендую',
 			'review.name-23': 'Вадим Поліщук',
 			'review.text-23': 'Все супер, швидко та якісно',
+			'review.name-24': 'Богдан',
+			'review.text-24':
+				'До створення інтернет магазину віднісся дуже відповідально. Робота виконана на всі 100 відсотків, з пропозиціями та покращеннями у дуже стислі строки! Дякую!',
+			'review.name-25': 'WAIB Agency',
+			'review.text-25': 'Макс відповідальний та ефективний. Мої рекомендації.',
 		},
 	},
 	en: {
@@ -307,6 +312,11 @@ const resources = {
 			'review.text-22': 'Well done, keep it up, recommend',
 			'review.name-23': 'Vadym Polishchuk',
 			'review.text-23': 'Everything is great, quickly and efficiently',
+			'review.name-24': 'Bohdan',
+			'review.text-24':
+				'He approached the creation of the online store very responsibly. The work was done 100 percent, with suggestions and improvements in a very short time! Thank you!',
+			'review.name-25': 'WAIB Agency',
+			'review.text-25': 'Maks is responsible and effective. My recommendations.',
 		},
 	},
 };
