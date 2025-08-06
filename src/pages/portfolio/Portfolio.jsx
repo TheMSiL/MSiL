@@ -19,6 +19,7 @@ import Work15 from '../../assets/curiosity.png';
 import Work2 from '../../assets/elixir.png';
 import Work22 from '../../assets/freedom.png';
 import Work21 from '../../assets/infinity_bet.png';
+import Work25 from '../../assets/kamba.png';
 import Work17 from '../../assets/kantor.png';
 import Work13 from '../../assets/kreativekorner.png';
 import Work18 from '../../assets/lucky_jet.png';
@@ -26,6 +27,8 @@ import Work12 from '../../assets/miraton.png';
 import Work12_1 from '../../assets/miraton2.png';
 import Work23 from '../../assets/numapay.png';
 import Work24 from '../../assets/paynicle.png';
+import Work26 from '../../assets/remont.png';
+import Work27 from '../../assets/spayke.png';
 import Work19 from '../../assets/startspeak.png';
 import Work16 from '../../assets/tvs.png';
 import Work14 from '../../assets/wavschool.png';
@@ -193,6 +196,33 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a target='_blank' href='https://github.com/TheMSiL/Miraton'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work25,
+			modalImg: Work25,
+			title: 'Kamba',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item13-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://kambaplus.de/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a style='cursor: not-allowed' target='_blank'>NDA</a>",
 				},
 			],
 		},
@@ -393,7 +423,7 @@ const Portfolio = () => {
 				{
 					icon: <FiFileText />,
 					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item1-desc'),
+					desc: t('portfolio.item7-desc'),
 				},
 				{
 					icon: <FaGlobe />,
@@ -436,6 +466,33 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a target='_blank' href='https://github.com/TheMSiL/NFT-Ring'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work27,
+			modalImg: Work27,
+			title: 'Spayke',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item7-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://spayke.netlify.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/Spayke'>GitHub</a>",
 				},
 			],
 		},
@@ -652,6 +709,33 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a target='_blank' href='https://github.com/TheMSiL/tg_casino'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work26,
+			modalImg: Work26,
+			title: 'LST',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item1-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://lst.com.ua/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/lst'>GitHub</a>",
 				},
 			],
 		},
