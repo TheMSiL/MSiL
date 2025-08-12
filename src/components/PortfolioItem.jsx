@@ -5,14 +5,30 @@ import Close from '../assets/close.svg';
 
 const PortfolioItem = ({ img, title, details, modalImg }) => {
 	const [modal, setModal] = useState(false);
+	const [imgLoaded, setImgLoaded] = useState(false);
+	const [modalImgLoaded, setModalImgLoaded] = useState(false);
 
 	const toggleModal = () => {
 		setModal(!modal);
+		if (!modal) setModalImgLoaded(false);
 	};
 
 	return (
 		<div className='portfolio__item'>
-			<img src={img} alt='' className='portfolio__img' />
+			<div style={{ position: 'relative' }}>
+				{!imgLoaded && (
+					<div className='img-loader'>
+						<span className='loader-spinner'></span>
+					</div>
+				)}
+				<img
+					src={img}
+					alt=''
+					className='portfolio__img'
+					style={imgLoaded ? {} : { visibility: 'hidden' }}
+					onLoad={() => setImgLoaded(true)}
+				/>
+			</div>
 
 			<div className='portfolio__hover' onClick={toggleModal}>
 				<h3 className='portfolio__title'>{title}</h3>
@@ -34,7 +50,6 @@ const PortfolioItem = ({ img, title, details, modalImg }) => {
 								return (
 									<li className='modal__item' key={index}>
 										<span className='item__icon'>{icon}</span>
-
 										<div>
 											<span className='item__title'>{title}</span>
 											<span className='item__details'>{parse(desc)}</span>
@@ -44,7 +59,20 @@ const PortfolioItem = ({ img, title, details, modalImg }) => {
 							})}
 						</ul>
 
-						<img src={modalImg} alt='' className='modal__img' />
+						<div style={{ position: 'relative' }}>
+							{!modalImgLoaded && (
+								<div className='img-loader'>
+									<span className='loader-spinner'></span>
+								</div>
+							)}
+							<img
+								src={modalImg}
+								alt=''
+								className='modal__img'
+								style={modalImgLoaded ? {} : { visibility: 'hidden' }}
+								onLoad={() => setModalImgLoaded(true)}
+							/>
+						</div>
 					</div>
 				</div>
 			)}
