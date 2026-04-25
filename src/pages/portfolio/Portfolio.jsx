@@ -1,23 +1,26 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaCode, FaGlobe } from 'react-icons/fa';
-import { FiExternalLink, FiFileText } from 'react-icons/fi';
+import {
+	FiChevronLeft,
+	FiChevronRight,
+	FiExternalLink,
+	FiFileText,
+} from 'react-icons/fi';
 import PortfolioItem from '../../components/PortfolioItem';
 import './portfolio.css';
 
-import Work3 from '../../assets/AimTraining.png';
-import Work10 from '../../assets/BeanScene.png';
-import Work11 from '../../assets/MNTN - Dribbble.png';
-import Work7 from '../../assets/NFT.png';
-import Work1 from '../../assets/Qubly.png';
-import Work8 from '../../assets/Zone.png';
 import Work6 from '../../assets/abc.png';
+import Work3 from '../../assets/abramova.png';
 import Work9 from '../../assets/accelerage-landing.png';
 import Work4 from '../../assets/accelerage.png';
+import Work10 from '../../assets/BeanScene.png';
 import Work20 from '../../assets/cars_usa.png';
 import Work5 from '../../assets/casino_tg.png';
 import Work15 from '../../assets/curiosity.png';
 import Work2 from '../../assets/elixir.png';
 import Work22 from '../../assets/freedom.png';
+import Work31 from '../../assets/handyman.png';
 import Work21 from '../../assets/infinity_bet.png';
 import Work25 from '../../assets/kamba.png';
 import Work17 from '../../assets/kantor.png';
@@ -25,19 +28,29 @@ import Work13 from '../../assets/kreativekorner.png';
 import Work18 from '../../assets/lucky_jet.png';
 import Work12 from '../../assets/miraton.png';
 import Work12_1 from '../../assets/miraton2.png';
+import Work11 from '../../assets/MNTN - Dribbble.png';
+import Work32 from '../../assets/monterento.png';
+import Work7 from '../../assets/NFT.png';
 import Work23 from '../../assets/numapay.png';
 import Work24 from '../../assets/paynicle.png';
+import Work1 from '../../assets/Qubly.png';
 import Work26 from '../../assets/remont.png';
+import Work34 from '../../assets/resilience.png';
 import Work27 from '../../assets/spayke.png';
 import Work19 from '../../assets/startspeak.png';
-import Work29 from '../../assets/swissPC.png';
 import Work28 from '../../assets/swissnodes.png';
+import Work29 from '../../assets/swissPC.png';
+import Work33 from '../../assets/tex.png';
 import Work16 from '../../assets/tvs.png';
 import Work30 from '../../assets/upcup.png';
 import Work14 from '../../assets/wavschool.png';
+import Work8 from '../../assets/Zone.png';
+import Work35 from '../../assets/sheremet.png';
 
 const Portfolio = () => {
 	const { t } = useTranslation();
+	const [currentPage, setCurrentPage] = useState(1);
+	const itemsPerPage = 6;
 
 	const portfolio = [
 		{
@@ -68,29 +81,29 @@ const Portfolio = () => {
 			],
 		},
 		{
-			img: Work19,
-			modalImg: Work19,
-			title: 'StartSpeakEN',
+			img: Work3,
+			modalImg: Work3,
+			title: 'Abramova Svíčky',
 			details: [
 				{
 					icon: <FiFileText />,
 					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item14-desc'),
+					desc: t('portfolio.item3-desc'),
 				},
 				{
 					icon: <FaGlobe />,
 					title: t('portfolio.item-title-2'),
-					desc: 'React, Tailwind CSS',
+					desc: 'Next.js, Typescript',
 				},
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a target='_blank' href='https://www.startspeaken.com/'>Web</a>",
+					desc: "<a target='_blank' href='https://candlesabramova.cz/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a target='_blank' href='https://github.com/TheMSiL/start_speakEN'>GitHub</a>",
+					desc: "<a style='cursor: not-allowed' target='_blank'>NDA</a>",
 				},
 			],
 		},
@@ -118,6 +131,276 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a target='_blank' href='https://github.com/TheMSiL/Elixir'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work12,
+			modalImg: Work12_1,
+			title: 'Miraton',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item10-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, CSS, JS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://miraton.vercel.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/Miraton'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work32,
+			modalImg: Work32,
+			title: 'Monterento',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item13-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'Next.js, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://kambaplus.de/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a style='cursor: not-allowed' target='_blank'>NDA</a>",
+				},
+			],
+		},
+		{
+			img: Work25,
+			modalImg: Work25,
+			title: 'Kamba',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item13-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://kambaplus.de/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a style='cursor: not-allowed' target='_blank'>NDA</a>",
+				},
+			],
+		},
+		{
+			img: Work33,
+			modalImg: Work33,
+			title: 'TEX',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item1-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://tex-io.com/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/TEX'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work17,
+			modalImg: Work17,
+			title: 'Kantor',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item13-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://kantorx.pl/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/kantor'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work31,
+			modalImg: Work31,
+			title: 'Handyman',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item1-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://handyman-prime.ca/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/Handyman'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work28,
+			modalImg: Work28,
+			title: 'SwissNodes',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item20-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'HTML, CSS, JS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://swissnodes.org/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a style='cursor: not-allowed' target='_blank'>NDA</a>",
+				},
+			],
+		},
+		{
+			img: Work35,
+			modalImg: Work35,
+			title: 'SHEREMET',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item1-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://sheremet-transport.pl/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a style='cursor: not-allowed' target='_blank'>NDA</a>",
+				},
+			],
+		},
+		{
+			img: Work26,
+			modalImg: Work26,
+			title: 'LST',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item1-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://lst.com.ua/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/lst'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work19,
+			modalImg: Work19,
+			title: 'StartSpeakEN',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item14-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://www.startspeaken.com/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/start_speakEN'>GitHub</a>",
 				},
 			],
 		},
@@ -230,14 +513,14 @@ const Portfolio = () => {
 			],
 		},
 		{
-			img: Work12,
-			modalImg: Work12_1,
-			title: 'Miraton',
+			img: Work22,
+			modalImg: Work22,
+			title: 'Freedom BC',
 			details: [
 				{
 					icon: <FiFileText />,
 					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item10-desc'),
+					desc: t('portfolio.item1-desc'),
 				},
 				{
 					icon: <FaGlobe />,
@@ -247,39 +530,12 @@ const Portfolio = () => {
 				{
 					icon: <FiExternalLink />,
 					title: t('portfolio.item-title-3'),
-					desc: "<a target='_blank' href='https://miraton.vercel.app/'>Web</a>",
+					desc: "<a target='_blank' href='https://freedom-bc.netlify.app/'>Web</a>",
 				},
 				{
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
-					desc: "<a target='_blank' href='https://github.com/TheMSiL/Miraton'>GitHub</a>",
-				},
-			],
-		},
-		{
-			img: Work25,
-			modalImg: Work25,
-			title: 'Kamba',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item13-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'React, Tailwind CSS',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a target='_blank' href='https://kambaplus.de/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a style='cursor: not-allowed' target='_blank'>NDA</a>",
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/freedom'>GitHub</a>",
 				},
 			],
 		},
@@ -419,33 +675,6 @@ const Portfolio = () => {
 			],
 		},
 		{
-			img: Work22,
-			modalImg: Work22,
-			title: 'Freedom BC',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item1-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'HTML, CSS, JS',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a target='_blank' href='https://freedom-bc.netlify.app/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a target='_blank' href='https://github.com/TheMSiL/freedom'>GitHub</a>",
-				},
-			],
-		},
-		{
 			img: Work10,
 			modalImg: Work10,
 			title: 'Bean Scene',
@@ -523,6 +752,33 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a target='_blank' href='https://github.com/TheMSiL/NFT-Ring'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work34,
+			modalImg: Work34,
+			title: 'Resilience',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item1-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'React, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://msil-resilience.netlify.app/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a target='_blank' href='https://github.com/TheMSiL/Resilince'>GitHub</a>",
 				},
 			],
 		},
@@ -689,33 +945,6 @@ const Portfolio = () => {
 			],
 		},
 		{
-			img: Work17,
-			modalImg: Work17,
-			title: 'Kantor',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item13-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'React, Tailwind CSS',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a target='_blank' href='https://kantorx.pl/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a target='_blank' href='https://github.com/TheMSiL/kantor'>GitHub</a>",
-				},
-			],
-		},
-		{
 			img: Work9,
 			modalImg: Work9,
 			title: 'Accelerage Landing',
@@ -769,97 +998,81 @@ const Portfolio = () => {
 				},
 			],
 		},
-		{
-			img: Work28,
-			modalImg: Work28,
-			title: 'SwissNodes',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item20-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'HTML, CSS, JS',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a target='_blank' href='https://swissnodes.org/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a style='cursor: not-allowed' target='_blank'>NDA</a>",
-				},
-			],
-		},
-		{
-			img: Work26,
-			modalImg: Work26,
-			title: 'LST',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item1-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'React, Tailwind',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a target='_blank' href='https://lst.com.ua/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a target='_blank' href='https://github.com/TheMSiL/lst'>GitHub</a>",
-				},
-			],
-		},
-		{
-			img: Work3,
-			modalImg: Work3,
-			title: 'AimTraining',
-			details: [
-				{
-					icon: <FiFileText />,
-					title: t('portfolio.item1-title-1'),
-					desc: t('portfolio.item3-desc'),
-				},
-				{
-					icon: <FaGlobe />,
-					title: t('portfolio.item-title-2'),
-					desc: 'HTML, CSS, JS',
-				},
-				{
-					icon: <FiExternalLink />,
-					title: t('portfolio.item-title-3'),
-					desc: "<a target='_blank' href='https://aim-game-themsil.vercel.app/'>Web</a>",
-				},
-				{
-					icon: <FaCode />,
-					title: t('portfolio.item-title-4'),
-					desc: "<a target='_blank' href='https://github.com/TheMSiL/AimGame'>GitHub</a>",
-				},
-			],
-		},
 	];
+
+	const indexOfLastItem = currentPage * itemsPerPage;
+	const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+	const currentItems = portfolio.slice(indexOfFirstItem, indexOfLastItem);
+
+	const totalPages = Math.ceil(portfolio.length / itemsPerPage);
+
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
+	};
+
+	const nextPage = () => {
+		if (currentPage < totalPages) {
+			setCurrentPage(currentPage + 1);
+		} else {
+			setCurrentPage(1);
+		}
+		scrollToTop();
+	};
+
+	const prevPage = () => {
+		if (currentPage > 1) {
+			setCurrentPage(currentPage - 1);
+		} else {
+			setCurrentPage(totalPages);
+		}
+		scrollToTop();
+	};
+
+	const goToPage = pageNumber => {
+		setCurrentPage(pageNumber);
+		scrollToTop();
+	};
+
 	return (
 		<section className='portfolio section'>
 			<h2 className='section__title'>
 				{t('portfolio.title')} <span>{t('portfolio.title-span')}</span>
 			</h2>
 			<div className='portfolio__container container grid'>
-				{portfolio.map(item => {
+				{currentItems.map(item => {
 					return <PortfolioItem key={item.title} {...item} />;
 				})}
+			</div>
+
+			<div className='pagination'>
+				<button
+					className='pagination__btn pagination__btn--prev'
+					onClick={prevPage}
+				>
+					<FiChevronLeft />
+				</button>
+
+				<div className='pagination__numbers'>
+					{Array.from({ length: totalPages }, (_, i) => i + 1).map(number => (
+						<button
+							key={number}
+							className={`pagination__number ${currentPage === number ? 'active' : ''}`}
+							onClick={() => goToPage(number)}
+						>
+							{number}
+						</button>
+					))}
+				</div>
+
+				<button
+					className='pagination__btn pagination__btn--next'
+					onClick={nextPage}
+				>
+					<FiChevronRight />
+				</button>
 			</div>
 		</section>
 	);
