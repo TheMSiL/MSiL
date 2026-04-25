@@ -14,6 +14,7 @@ import Work6 from '../../assets/abc.png';
 import Work3 from '../../assets/abramova.png';
 import Work9 from '../../assets/accelerage-landing.png';
 import Work4 from '../../assets/accelerage.png';
+import Work36 from '../../assets/amrit.png';
 import Work10 from '../../assets/BeanScene.png';
 import Work20 from '../../assets/cars_usa.png';
 import Work5 from '../../assets/casino_tg.png';
@@ -36,6 +37,7 @@ import Work24 from '../../assets/paynicle.png';
 import Work1 from '../../assets/Qubly.png';
 import Work26 from '../../assets/remont.png';
 import Work34 from '../../assets/resilience.png';
+import Work35 from '../../assets/sheremet.png';
 import Work27 from '../../assets/spayke.png';
 import Work19 from '../../assets/startspeak.png';
 import Work28 from '../../assets/swissnodes.png';
@@ -45,7 +47,6 @@ import Work16 from '../../assets/tvs.png';
 import Work30 from '../../assets/upcup.png';
 import Work14 from '../../assets/wavschool.png';
 import Work8 from '../../assets/Zone.png';
-import Work35 from '../../assets/sheremet.png';
 
 const Portfolio = () => {
 	const { t } = useTranslation();
@@ -266,6 +267,33 @@ const Portfolio = () => {
 					icon: <FaCode />,
 					title: t('portfolio.item-title-4'),
 					desc: "<a target='_blank' href='https://github.com/TheMSiL/kantor'>GitHub</a>",
+				},
+			],
+		},
+		{
+			img: Work36,
+			modalImg: Work36,
+			title: 'Amrit-On',
+			details: [
+				{
+					icon: <FiFileText />,
+					title: t('portfolio.item1-title-1'),
+					desc: t('portfolio.item13-desc'),
+				},
+				{
+					icon: <FaGlobe />,
+					title: t('portfolio.item-title-2'),
+					desc: 'Next.js, Tailwind CSS',
+				},
+				{
+					icon: <FiExternalLink />,
+					title: t('portfolio.item-title-3'),
+					desc: "<a target='_blank' href='https://amrit-on.com/'>Web</a>",
+				},
+				{
+					icon: <FaCode />,
+					title: t('portfolio.item-title-4'),
+					desc: "<a style='cursor: not-allowed' target='_blank'>NDA</a>",
 				},
 			],
 		},
