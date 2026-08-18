@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# image masters for scripts/optimize-images.mjs (generated .webp files are committed)
+src/assets/works/_src

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://msil.vercel.app/sitemap.xml

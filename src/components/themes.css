@@ -44,6 +44,19 @@
 	margin-bottom: 15px;
 }
 
+.theme__button {
+	display: block;
+	padding: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	line-height: 0;
+}
+
+.theme__button:focus-visible {
+	outline: 2px solid var(--title-color);
+	outline-offset: 2px;
+}
+
 .theme__img {
 	width: 30px;
 	cursor: pointer;

@@ -67,6 +67,12 @@
 
 .skill__imgBox img {
 	height: 75%;
+	max-height: 70px;
+	object-fit: contain;
+}
+
+.dark-theme .skill__imgBox--invert img {
+	filter: invert(1);
 }
 
 .skill__title {
@@ -168,6 +174,7 @@
 }
 
 .stats__title {
+	max-width: 12ch;
 	font-size: var(--small-font-size);
 	line-height: 1.6;
 	padding-left: 45px;

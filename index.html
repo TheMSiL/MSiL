@@ -2,13 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./public/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="" />
-    <title>MSiL</title>
+
+    <title>Max Silka — Front-end React Developer</title>
+    <meta
+      name="description"
+      content="Front-end developer based in Kyiv, building fast and responsive interfaces with React, Next.js, TypeScript and Tailwind CSS. Commercial projects: marketing sites, e-commerce, logistics and analytics platforms."
+    />
+    <link rel="canonical" href="https://msil.vercel.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Max Silka" />
+    <meta property="og:title" content="Max Silka — Front-end React Developer" />
+    <meta
+      property="og:description"
+      content="Front-end developer based in Kyiv, building fast and responsive interfaces with React, Next.js, TypeScript and Tailwind CSS."
+    />
+    <meta property="og:url" content="https://msil.vercel.app/" />
+    <meta property="og:image" content="https://msil.vercel.app/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Max Silka — Front-end React Developer" />
+    <meta
+      name="twitter:description"
+      content="Front-end developer based in Kyiv, building fast and responsive interfaces with React, Next.js, TypeScript and Tailwind CSS."
+    />
+    <meta name="twitter:image" content="https://msil.vercel.app/og.jpg" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="theme-color" content="hsl(271, 76%, 53%)" />
+
+    <script>
+      // Applied before paint so the stored theme and accent never flash.
+      (function () {
+        try {
+          var root = document.documentElement;
+          var theme = localStorage.getItem('theme');
+
+          if (!theme) {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark-theme'
+              : 'light-theme';
+          }
+
+          root.className = theme;
+
+          var color = localStorage.getItem('color');
+
+          if (color) {
+            root.style.setProperty('--first-color', color);
+            document
+              .querySelector('meta[name="theme-color"]')
+              .setAttribute('content', color);
+          }
+        } catch (error) {
+          /* private mode: keep the CSS defaults */
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
+    <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>
