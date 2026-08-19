@@ -1,60 +1,22 @@
+/*
+ * Global responsive rules only.
+ *
+ * The page stylesheets (about.css, contact.css, portfolio.css, reviews.css)
+ * ship in their own lazy chunks and are appended to the document AFTER this
+ * file, so any page-specific override written here would lose the cascade;
+ * media queries add no specificity. Page-level breakpoints live in the page's
+ * own stylesheet.
+ */
+
 @media screen and (max-width: 1400px) {
 	.container {
 		max-width: calc(100% - 180px);
 	}
 }
 
-@media screen and (max-width: 1285px) {
-	.info__list {
-		grid-template-columns: 255px 245px;
-	}
-}
-
 @media screen and (max-width: 1200px) {
 	.grid {
 		gap: 20px;
-	}
-
-	.section__subtitle {
-		text-align: center;
-		margin-bottom: 50px;
-	}
-
-	.about__container {
-		grid-template-columns: 1fr;
-	}
-
-	.info__list {
-		display: grid;
-		justify-content: space-around;
-		margin-bottom: 50px;
-	}
-
-	.button__flex-container {
-		display: flex;
-		justify-content: center;
-	}
-
-	.hobbies__list {
-		display: flex;
-		gap: 50px;
-		justify-content: space-around;
-	}
-
-	.separator-1200 {
-		display: block;
-	}
-
-	.skills__container {
-		row-gap: 32px;
-	}
-
-	.portfolio__modal-content {
-		max-width: 600px;
-	}
-
-	.form__input-div {
-		margin-bottom: 24px;
 	}
 }
 
@@ -63,55 +25,16 @@
 		max-width: 720px;
 	}
 
+	/*
+	 * Extra top padding keeps section titles clear of the fixed nav toggle,
+	 * extra bottom padding clears the floating theme/language bar.
+	 */
 	.section {
-		padding-block: 50px;
+		padding-block: 85px 95px;
 	}
 
 	.section__title {
 		margin-bottom: 40px;
-	}
-
-	.section__subtitle {
-		text-align: center;
-	}
-
-	.about__container,
-	.contact__container {
-		grid-template-columns: 1fr;
-	}
-
-	.skills__container {
-		row-gap: 25px;
-	}
-
-	.skill__imgBox img {
-		height: 50%;
-	}
-
-	.resume__description {
-		max-width: 300px;
-	}
-
-	.resume__subtitle {
-		margin-block: 10px;
-	}
-
-	.section__subtitle {
-		margin-bottom: 40px;
-	}
-
-	.separator-1200,
-	.separator {
-		margin: 65px auto 50px;
-	}
-
-	.portfolio__container {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.contact__container {
-		row-gap: 48px;
-		padding-inline: 25px;
 	}
 }
 
@@ -119,44 +42,29 @@
 	.container {
 		max-width: 540px;
 	}
-
-	.info__list {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.hobbies__list {
-		gap: 0;
-	}
-
-	.hobbies__list img {
-		max-width: 30%;
-	}
-
-	.separator-1200,
-	.separator {
-		margin: 45px auto 35px;
-	}
-
-	.education__flex {
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		gap: 20px;
-	}
-
-	.resume__description {
-		max-width: 400px;
-	}
-
-	.education__flex .button {
-		margin-left: 60px;
-	}
-
-	.contact__container {
-		padding-inline: 35px;
-	}
 }
 
 @media screen and (max-width: 576px) {
+	.container {
+		padding-inline: 24px;
+	}
+
+	.theme__img {
+		width: 25px;
+	}
+
+	.section {
+		padding-block: 75px 90px;
+	}
+
+	.button {
+		padding: 14px 60px 14px 24px;
+	}
+
+	.button__icon {
+		width: 48px;
+	}
+
 	.nav__toggle {
 		top: 20px;
 		right: 15px;
@@ -170,150 +78,18 @@
 	.nav__name {
 		font-size: var(--h3-font-size);
 	}
-
-	.info__title {
-		display: block;
-		margin-bottom: 4px;
-	}
-
-	.container {
-		padding-inline: 40px;
-	}
-
-	.skills__container {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.hobbies__list {
-		flex-wrap: wrap;
-		gap: 10px;
-	}
-
-	.hobbies__list img {
-		max-width: 35%;
-	}
-
-	.resume__subtitle span {
-		display: block;
-	}
-
-	.portfolio__container {
-		grid-template-columns: 1fr;
-	}
-
-	.form__input-group {
-		grid-template-columns: 1fr;
-	}
-
-	.theme__img {
-		width: 25px;
-	}
-
-	.style__switcher-toggler,
-	.theme__toggler,
-	.language {
-		width: 40px;
-		height: 40px;
-	}
-
-	.language {
-		top: -30%;
-	}
-
-	.style__switcher-toggler {
-		top: 15px;
-	}
-
-	.theme__toggler {
-		bottom: 15%;
-	}
-
-	.style__switcher-close {
-		top: 5%;
-	}
-
-	.contact__container {
-		padding-inline: 50px;
-	}
-}
-
-@media screen and (max-width: 450px) {
-	.info__title {
-		display: block;
-		margin-bottom: 4px;
-	}
-
-	.education__flex .button {
-		margin-left: 15px;
-	}
-
-	.language {
-		width: 32px;
-		height: 32px;
-		top: -5%;
-	}
-
-	.style__switcher-toggler {
-		width: 32px;
-		height: 32px;
-		top: 35px;
-	}
-
-	.theme__toggler {
-		width: 32px;
-		height: 32px;
-		bottom: 18%;
-	}
 }
 
 @media screen and (max-width: 370px) {
-	.language {
-		top: 1%;
+	.container {
+		padding-inline: 18px;
 	}
 
-	.style__switcher-toggler {
-		top: 38px;
-	}
-
-	.info__list {
-		grid-template-columns: 1fr;
-	}
-
-	.info__title {
-		display: inline;
-	}
-
-	.section__subtitle {
-		margin-bottom: 30px;
-	}
-
-	.separator-1200,
-	.separator {
-		margin: 35px auto 20px;
-	}
-
-	.hobbies__list {
-		flex-direction: column;
-		gap: 15px;
-	}
-
-	.hobbies__list img {
-		max-width: 50%;
-	}
-
-	.skills__container {
-		grid-template-columns: repeat(2, 105px);
-	}
-
-	.education__flex .button {
-		margin-left: 0;
-	}
-
-	.education__flex .button {
-		padding: 15px 55px 15px 20px;
+	.button {
+		padding: 14px 54px 14px 20px;
 	}
 
 	.button__icon {
-		width: 45px;
+		width: 44px;
 	}
 }

@@ -18,7 +18,7 @@ const Reviews = () => {
 				description={t('seo.reviews-description')}
 				path='/reviews'
 			/>
-			<h2 className='section__title'>
+			<h2 className='section__title container'>
 				{t('reviews.title')} <span>{t('reviews.title-span')}</span>
 			</h2>
 

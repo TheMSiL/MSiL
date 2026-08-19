@@ -40,7 +40,7 @@ const Contact = () => {
 				description={t('seo.contact-description')}
 				path='/contact'
 			/>
-			<h2 className='section__title'>
+			<h2 className='section__title container'>
 				{t('contact.title')} <span>{t('contact.title-span')}</span>
 			</h2>
 

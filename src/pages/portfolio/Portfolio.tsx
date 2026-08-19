@@ -34,7 +34,7 @@ const Portfolio = () => {
 				description={t('seo.portfolio-description')}
 				path='/portfolio'
 			/>
-			<h2 className='section__title'>
+			<h2 className='section__title container'>
 				{t('portfolio.title')} <span>{t('portfolio.title-span')}</span>
 			</h2>
 			<div className='portfolio__container container grid'>

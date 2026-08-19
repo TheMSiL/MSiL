@@ -50,6 +50,28 @@ const Themes = () => {
 	return (
 		<div>
 			<div className={`${showSwitcher ? 'show-switcher' : ''} style__switcher`}>
+				<h3 className='style__switcher-title'>{t('style')}</h3>
+				<div className='style__switcher-items'>
+					{themes.map(item => (
+						<ThemeItem key={item.id} {...item} changeColor={setColor} />
+					))}
+				</div>
+				<button
+					className='style__switcher-close'
+					onClick={() => setShowSwitcher(false)}
+					aria-label={t('portfolio.close')}
+				>
+					&times;
+				</button>
+			</div>
+
+			{/*
+			 * Kept outside the panel: it is transformed, which would make it the
+			 * containing block for the bar's `position: fixed` on mobile.
+			 */}
+			<div
+				className={`switcher__controls${showSwitcher ? ' show-switcher' : ''}`}
+			>
 				<SwitchLanguage />
 				<button
 					className='style__switcher-toggler'
@@ -65,19 +87,6 @@ const Themes = () => {
 					aria-label={t(theme === 'light-theme' ? 'theme.dark' : 'theme.light')}
 				>
 					{theme === 'light-theme' ? <BsMoon /> : <BsSun />}
-				</button>
-				<h3 className='style__switcher-title'>{t('style')}</h3>
-				<div className='style__switcher-items'>
-					{themes.map(item => (
-						<ThemeItem key={item.id} {...item} changeColor={setColor} />
-					))}
-				</div>
-				<button
-					className='style__switcher-close'
-					onClick={() => setShowSwitcher(false)}
-					aria-label={t('portfolio.close')}
-				>
-					&times;
 				</button>
 			</div>
 		</div>

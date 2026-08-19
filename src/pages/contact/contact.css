@@ -20,7 +20,12 @@
 	column-gap: 16px;
 	margin-bottom: 20px;
 	width: fit-content;
+	max-width: 100%;
 	transition: opacity 0.25s ease;
+}
+
+.contact__info .info__icon {
+	flex-shrink: 0;
 }
 
 .contact__info a.info__item:hover {
@@ -43,14 +48,17 @@
 	font-family: var(--body-font);
 	font-size: var(--small-font-size);
 	font-weight: var(--weight-500);
+	overflow-wrap: anywhere;
 }
 
 .contact__socials {
 	display: flex;
-	column-gap: 16px;
+	flex-wrap: wrap;
+	gap: 16px;
 }
 
 .contact__social-link {
+	flex-shrink: 0;
 	background-color: var(--container-color);
 	color: var(--title-color);
 	width: 40px;
@@ -124,4 +132,42 @@
 .contact__button-icon {
 	font-size: var(--h3-font-size);
 	line-height: 64px;
+}
+
+/*========== RESPONSIVE ==========*/
+@media screen and (max-width: 1200px) {
+	.form__input-div {
+		margin-bottom: 24px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.contact__container {
+		grid-template-columns: 1fr;
+		row-gap: 48px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.form__input-group {
+		grid-template-columns: 1fr;
+	}
+
+	.contact__info .info__icon {
+		font-size: var(--h3-font-size);
+	}
+
+	.form__control {
+		padding: 12px 20px;
+	}
+
+	.textarea {
+		height: 140px;
+	}
+
+	/* Full-width submit reads better than a pill floating in a narrow column. */
+	.form__flex-div .button {
+		width: 100%;
+		text-align: left;
+	}
 }

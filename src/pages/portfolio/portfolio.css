@@ -120,6 +120,7 @@
 	max-width: 720px;
 	width: 100%;
 	max-height: 92vh;
+	max-height: 92dvh;
 	overflow-y: auto;
 	border-radius: 20px;
 	position: relative;
@@ -256,8 +257,83 @@
 	border-color: var(--first-color);
 }
 
+/*========== RESPONSIVE ==========*/
+@media screen and (max-width: 1200px) {
+	.portfolio__modal-content {
+		max-width: 600px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.portfolio__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
 @media screen and (max-width: 768px) {
+	/* A fixed height crops the shots badly once the cards get narrow. */
+	.portfolio__img {
+		height: auto;
+		aspect-ratio: 16 / 10;
+	}
+
 	.modal__body {
 		padding: 22px 22px 26px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.portfolio__container {
+		grid-template-columns: 1fr;
+	}
+
+	.portfolio__hover {
+		padding: 16px;
+	}
+
+	.portfolio__modal {
+		padding: 12px;
+	}
+
+	.modal__close {
+		top: 12px;
+		right: 12px;
+		width: 36px;
+		height: 36px;
+		font-size: 18px;
+	}
+
+	.modal__body {
+		padding: 20px 18px 24px;
+	}
+
+	.modal__tags {
+		margin-block: 16px 22px;
+	}
+
+	.modal__link {
+		display: block;
+		text-align: left;
+	}
+
+	.pagination {
+		flex-wrap: wrap;
+		gap: 10px;
+		margin-top: 40px;
+	}
+
+	.pagination__btn {
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+	}
+
+	.pagination__numbers {
+		gap: 6px;
+	}
+
+	.pagination__number {
+		width: 36px;
+		height: 36px;
 	}
 }
